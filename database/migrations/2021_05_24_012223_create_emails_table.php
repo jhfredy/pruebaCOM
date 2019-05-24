@@ -4,21 +4,25 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateEmailsTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
+    //funcion que me permite crear email
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('emails', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('asunto');
+            $table->string('destinatario');
+            $table->text('mensaje');
+            $table->unsignedInteger('user_id');
+
+            $table->foreign('user_id')
+            ->references('id')->on('users');
             $table->timestamps();
         });
     }
@@ -30,6 +34,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('emails');
     }
 }
