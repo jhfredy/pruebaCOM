@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+//llamo a la instancia de los modelos
+use App\Municipio;
+use App\Departamento;
+use App\Pais;
 class UserController extends Controller
 {
     /**
@@ -11,53 +14,69 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        //si hay busqueda
+        $search=$request->search;
+        if ($search=='') {
+            $user=User::orderBy('id','desc')->paginate(3);
+        }else{
+            $user=User::where('nombre','like','%'.$search.'%')
+            ->orWhere('email','like','%'.$search.'%')
+            ->orWhere('rol','like','%'.$search.'%')
+            ->orderBy('id','desc')->paginate(3);
+        }
+        //paginacion manual de laravel
+        return[
+            'pagination'=>[
+                'total'=>$user->total(),
+                'current_page'=>$user->currentPage(),
+                'per_page'=>$user->perPage(),
+                'last_page'=>$user->lastPage(),
+                'from'=>$user->firstItem(),
+                'to'=>$user->lastItem(),
+            ],
+            //retorno la variable $user con la paginacion
+            'user'=>$user
+        ];
+    }
+    // funcion que me permite listar paises
+    public function listarPaises(){
+        //me trae todos los paises
+        return DB::table('paises')->get();
+    }
+    // funcion que me permite listar departamentos
+    public function listarDepartamentos(Request $request){
+        //si envio una peticion por vue en el multiselect me filtra por el pais que escogi
+        if(isset($request->id)){
+            return DB::table('departamentos')->where('pais_id',$request->id)->get();
+            //si no me lista todos los departamentos
+        }else{
+            return DB::table('departamentos')->get();
+        }
+    }
+    // funcion que me permite listar municipios
+    public function listarMunicipios(Request $request){
+        //si envio una peticion por vue en el multiselect me filtra por el departamento que escogi
+        if(isset($request->id)){
+            return DB::table('municipios')->where('municipio_id',$request->id)->get();
+            //si no me lista todos los departamentos
+        }else{
+            return DB::table('municipios')->get();
+        }
+    }
+    
+
+    public function store(UserStoreRequest $request)
+    {
+        $user=New User();
+        $user->name=$request->name;
+        $user->email=$request->email;
+        $user->password=bcrypt($request->password);
+        $user->municipio_id=$request->municipio_id;
+        $user->save();
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
@@ -68,7 +87,12 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user=User::find($request->id);
+        $user->name=$request->name;
+        $user->email=$request->email;
+        $user->password=bcrypt($request->password);
+        $user->municipio_id=$request->municipio_id;
+        $user->save();
     }
 
     /**
@@ -77,8 +101,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        //
+        $user=User::find($request->id);
+        $user->delete();
     }
 }

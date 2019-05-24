@@ -19,3 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/usuarios','HomeController@usuarios');
+Route::get('/listarMunicipios','UserController@listarMunicipios');
+Route::get('/listarDepartamentos','UserController@listarDepartamentos');
+Route::get('/listarPaises','UserController@listarPaises');
