@@ -14,6 +14,7 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('NoCache');//middleware para borrar cache cuando realizo un cierre de sesion
     }
 
     /**
@@ -24,5 +25,9 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+    // funcion que me sirve para redirigir a la ruta de usuarios
+    public function usuarios(){
+        return view('backend.cliente.cliente-user');
     }
 }

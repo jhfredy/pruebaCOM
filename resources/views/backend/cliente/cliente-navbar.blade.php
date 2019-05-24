@@ -1,7 +1,7 @@
 {{--  creo componente para ver los usuarios  --}}
 @include('backend.componentes.nav-link',[
     'title'=>'Usuarios',
-    'link'=>'/',
+    'link'=>'/usuarios',
     'color'=>'green',
     'icon'=>'user'
 ])

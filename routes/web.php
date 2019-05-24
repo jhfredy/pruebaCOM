@@ -10,11 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// ruta para redirigir al login
 Route::get('/', function () {
     return redirect('/login');
 });
-
+// llamo al archivo auth.php
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/usuarios','HomeController@usuarios');
