@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Municipio;
 use App\Departamento;
 use App\Pais;
+use App\User;
 class UserController extends Controller
 {
     /**
@@ -19,11 +20,10 @@ class UserController extends Controller
         //si hay busqueda
         $search=$request->search;
         if ($search=='') {
-            $user=User::orderBy('id','desc')->paginate(3);
+            $user=User::with('municipios')->orderBy('id','desc')->paginate(3);
         }else{
-            $user=User::where('nombre','like','%'.$search.'%')
+            $user=User::with('municipios')->where('name','like','%'.$search.'%')
             ->orWhere('email','like','%'.$search.'%')
-            ->orWhere('rol','like','%'.$search.'%')
             ->orderBy('id','desc')->paginate(3);
         }
         //paginacion manual de laravel

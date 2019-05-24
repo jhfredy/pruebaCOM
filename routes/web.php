@@ -22,3 +22,8 @@ Route::get('/usuarios','HomeController@usuarios');
 Route::get('/listarMunicipios','UserController@listarMunicipios');
 Route::get('/listarDepartamentos','UserController@listarDepartamentos');
 Route::get('/listarPaises','UserController@listarPaises');
+
+Route::resource('usuarios_crud', 'UserController',[
+    'only'=>['index','store','update'],
+]);
+Route::post('/usuarios_crud/delete','UserController@destroy');
