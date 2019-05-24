@@ -11,5 +11,19 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.styles([
+    'public/vendor/nucleo/css/nucleo.css',
+    'public/vendor/@fortawesome/fontawesome-free/css/all.min.css',
+    'public/css/argon.css?v=1.0.0'
+], 'public/css/styleAllBackend.css')
+
+.scripts([
+        'public/vendor/jquery/dist/jquery.min.js',
+        'public/vendor/bootstrap/dist/js/bootstrap.bundle.min.js',
+        'public/vendor/chart.js/dist/Chart.min.js',
+        'public/vendor/chart.js/dist/Chart.extension.js',
+        'public/js/argon.js?v=1.0.0',
+    ], 'public/js/scriptAllBackend.js')
+    .js([
+        'resources/assets/js/app.js'
+    ], 'public/js/vueCompilado/appBackendVue.js');
