@@ -11,6 +11,9 @@ use App\User;
 use DB;
 //llqmo a la instancia de los validadores
 use  App\Http\Requests\UserStoreRequest;
+use App\Http\Requests\UserUpdateRequest;
+
+
 class UserController extends Controller
 {
     /**
@@ -88,7 +91,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UserUpdateRequest $request, $id)
     {
         $user=User::find($request->id);
         $user->name=$request->name;

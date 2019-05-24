@@ -133,9 +133,10 @@ import bFormInput from 'bootstrap-vue/es/components/form-input/form-input';
 import bFormGroup from 'bootstrap-vue/es/components/form-group/form-group';
 import bFormCheckbox from 'bootstrap-vue/es/components/form-checkbox/form-checkbox';
 import Multiselect from 'vue-multiselect';
+import bModal from "bootstrap-vue/es/components/modal/modal";
 
 export default {
-    components:{bForm,bFormInput,bFormGroup,Multiselect,bFormCheckbox},
+    components:{bForm,bFormInput,bFormGroup,Multiselect,bFormCheckbox,bModal},
     data(){
         return{
             arrayUsuarios:[],

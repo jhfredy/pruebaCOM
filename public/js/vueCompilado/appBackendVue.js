@@ -44673,6 +44673,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_es_components_form_checkbox_form_checkbox___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_es_components_form_checkbox_form_checkbox__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_multiselect__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_multiselect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_vue_multiselect__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_bootstrap_vue_es_components_modal_modal__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_bootstrap_vue_es_components_modal_modal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_bootstrap_vue_es_components_modal_modal__);
 //
 //
 //
@@ -44802,6 +44804,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 
 
@@ -44810,7 +44813,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: { bForm: __WEBPACK_IMPORTED_MODULE_0_bootstrap_vue_es_components_form_form___default.a, bFormInput: __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue_es_components_form_input_form_input___default.a, bFormGroup: __WEBPACK_IMPORTED_MODULE_2_bootstrap_vue_es_components_form_group_form_group___default.a, Multiselect: __WEBPACK_IMPORTED_MODULE_4_vue_multiselect___default.a, bFormCheckbox: __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_es_components_form_checkbox_form_checkbox___default.a },
+    components: { bForm: __WEBPACK_IMPORTED_MODULE_0_bootstrap_vue_es_components_form_form___default.a, bFormInput: __WEBPACK_IMPORTED_MODULE_1_bootstrap_vue_es_components_form_input_form_input___default.a, bFormGroup: __WEBPACK_IMPORTED_MODULE_2_bootstrap_vue_es_components_form_group_form_group___default.a, Multiselect: __WEBPACK_IMPORTED_MODULE_4_vue_multiselect___default.a, bFormCheckbox: __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue_es_components_form_checkbox_form_checkbox___default.a, bModal: __WEBPACK_IMPORTED_MODULE_5_bootstrap_vue_es_components_modal_modal___default.a },
     data: function data() {
         return {
             arrayUsuarios: [],
@@ -50708,6 +50711,3236 @@ exports.default = _default;
 /***/ (function(module, exports, __webpack_require__) {
 
 !function(t,e){ true?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.VueMultiselect=e():t.VueMultiselect=e()}(this,function(){return function(t){function e(i){if(n[i])return n[i].exports;var r=n[i]={i:i,l:!1,exports:{}};return t[i].call(r.exports,r,r.exports,e),r.l=!0,r.exports}var n={};return e.m=t,e.c=n,e.i=function(t){return t},e.d=function(t,n,i){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:i})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},e.p="/",e(e.s=60)}([function(t,e){var n=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=n)},function(t,e,n){var i=n(49)("wks"),r=n(30),o=n(0).Symbol,s="function"==typeof o;(t.exports=function(t){return i[t]||(i[t]=s&&o[t]||(s?o:r)("Symbol."+t))}).store=i},function(t,e,n){var i=n(5);t.exports=function(t){if(!i(t))throw TypeError(t+" is not an object!");return t}},function(t,e,n){var i=n(0),r=n(10),o=n(8),s=n(6),u=n(11),a=function(t,e,n){var l,c,f,p,h=t&a.F,d=t&a.G,v=t&a.S,g=t&a.P,y=t&a.B,m=d?i:v?i[e]||(i[e]={}):(i[e]||{}).prototype,b=d?r:r[e]||(r[e]={}),_=b.prototype||(b.prototype={});d&&(n=e);for(l in n)c=!h&&m&&void 0!==m[l],f=(c?m:n)[l],p=y&&c?u(f,i):g&&"function"==typeof f?u(Function.call,f):f,m&&s(m,l,f,t&a.U),b[l]!=f&&o(b,l,p),g&&_[l]!=f&&(_[l]=f)};i.core=r,a.F=1,a.G=2,a.S=4,a.P=8,a.B=16,a.W=32,a.U=64,a.R=128,t.exports=a},function(t,e,n){t.exports=!n(7)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,e){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,e,n){var i=n(0),r=n(8),o=n(12),s=n(30)("src"),u=Function.toString,a=(""+u).split("toString");n(10).inspectSource=function(t){return u.call(t)},(t.exports=function(t,e,n,u){var l="function"==typeof n;l&&(o(n,"name")||r(n,"name",e)),t[e]!==n&&(l&&(o(n,s)||r(n,s,t[e]?""+t[e]:a.join(String(e)))),t===i?t[e]=n:u?t[e]?t[e]=n:r(t,e,n):(delete t[e],r(t,e,n)))})(Function.prototype,"toString",function(){return"function"==typeof this&&this[s]||u.call(this)})},function(t,e){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,e,n){var i=n(13),r=n(25);t.exports=n(4)?function(t,e,n){return i.f(t,e,r(1,n))}:function(t,e,n){return t[e]=n,t}},function(t,e){var n={}.toString;t.exports=function(t){return n.call(t).slice(8,-1)}},function(t,e){var n=t.exports={version:"2.5.7"};"number"==typeof __e&&(__e=n)},function(t,e,n){var i=n(14);t.exports=function(t,e,n){if(i(t),void 0===e)return t;switch(n){case 1:return function(n){return t.call(e,n)};case 2:return function(n,i){return t.call(e,n,i)};case 3:return function(n,i,r){return t.call(e,n,i,r)}}return function(){return t.apply(e,arguments)}}},function(t,e){var n={}.hasOwnProperty;t.exports=function(t,e){return n.call(t,e)}},function(t,e,n){var i=n(2),r=n(41),o=n(29),s=Object.defineProperty;e.f=n(4)?Object.defineProperty:function(t,e,n){if(i(t),e=o(e,!0),i(n),r)try{return s(t,e,n)}catch(t){}if("get"in n||"set"in n)throw TypeError("Accessors not supported!");return"value"in n&&(t[e]=n.value),t}},function(t,e){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,e){t.exports={}},function(t,e){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,e,n){"use strict";var i=n(7);t.exports=function(t,e){return!!t&&i(function(){e?t.call(null,function(){},1):t.call(null)})}},function(t,e,n){var i=n(23),r=n(16);t.exports=function(t){return i(r(t))}},function(t,e,n){var i=n(53),r=Math.min;t.exports=function(t){return t>0?r(i(t),9007199254740991):0}},function(t,e,n){var i=n(11),r=n(23),o=n(28),s=n(19),u=n(64);t.exports=function(t,e){var n=1==t,a=2==t,l=3==t,c=4==t,f=6==t,p=5==t||f,h=e||u;return function(e,u,d){for(var v,g,y=o(e),m=r(y),b=i(u,d,3),_=s(m.length),x=0,w=n?h(e,_):a?h(e,0):void 0;_>x;x++)if((p||x in m)&&(v=m[x],g=b(v,x,y),t))if(n)w[x]=g;else if(g)switch(t){case 3:return!0;case 5:return v;case 6:return x;case 2:w.push(v)}else if(c)return!1;return f?-1:l||c?c:w}}},function(t,e,n){var i=n(5),r=n(0).document,o=i(r)&&i(r.createElement);t.exports=function(t){return o?r.createElement(t):{}}},function(t,e){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,e,n){var i=n(9);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==i(t)?t.split(""):Object(t)}},function(t,e){t.exports=!1},function(t,e){t.exports=function(t,e){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:e}}},function(t,e,n){var i=n(13).f,r=n(12),o=n(1)("toStringTag");t.exports=function(t,e,n){t&&!r(t=n?t:t.prototype,o)&&i(t,o,{configurable:!0,value:e})}},function(t,e,n){var i=n(49)("keys"),r=n(30);t.exports=function(t){return i[t]||(i[t]=r(t))}},function(t,e,n){var i=n(16);t.exports=function(t){return Object(i(t))}},function(t,e,n){var i=n(5);t.exports=function(t,e){if(!i(t))return t;var n,r;if(e&&"function"==typeof(n=t.toString)&&!i(r=n.call(t)))return r;if("function"==typeof(n=t.valueOf)&&!i(r=n.call(t)))return r;if(!e&&"function"==typeof(n=t.toString)&&!i(r=n.call(t)))return r;throw TypeError("Can't convert object to primitive value")}},function(t,e){var n=0,i=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++n+i).toString(36))}},function(t,e,n){"use strict";var i=n(0),r=n(12),o=n(9),s=n(67),u=n(29),a=n(7),l=n(77).f,c=n(45).f,f=n(13).f,p=n(51).trim,h=i.Number,d=h,v=h.prototype,g="Number"==o(n(44)(v)),y="trim"in String.prototype,m=function(t){var e=u(t,!1);if("string"==typeof e&&e.length>2){e=y?e.trim():p(e,3);var n,i,r,o=e.charCodeAt(0);if(43===o||45===o){if(88===(n=e.charCodeAt(2))||120===n)return NaN}else if(48===o){switch(e.charCodeAt(1)){case 66:case 98:i=2,r=49;break;case 79:case 111:i=8,r=55;break;default:return+e}for(var s,a=e.slice(2),l=0,c=a.length;l<c;l++)if((s=a.charCodeAt(l))<48||s>r)return NaN;return parseInt(a,i)}}return+e};if(!h(" 0o1")||!h("0b1")||h("+0x1")){h=function(t){var e=arguments.length<1?0:t,n=this;return n instanceof h&&(g?a(function(){v.valueOf.call(n)}):"Number"!=o(n))?s(new d(m(e)),n,h):m(e)};for(var b,_=n(4)?l(d):"MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,isFinite,isInteger,isNaN,isSafeInteger,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,parseFloat,parseInt,isInteger".split(","),x=0;_.length>x;x++)r(d,b=_[x])&&!r(h,b)&&f(h,b,c(d,b));h.prototype=v,v.constructor=h,n(6)(i,"Number",h)}},function(t,e,n){"use strict";function i(t){return 0!==t&&(!(!Array.isArray(t)||0!==t.length)||!t)}function r(t){return function(){return!t.apply(void 0,arguments)}}function o(t,e){return void 0===t&&(t="undefined"),null===t&&(t="null"),!1===t&&(t="false"),-1!==t.toString().toLowerCase().indexOf(e.trim())}function s(t,e,n,i){return t.filter(function(t){return o(i(t,n),e)})}function u(t){return t.filter(function(t){return!t.$isLabel})}function a(t,e){return function(n){return n.reduce(function(n,i){return i[t]&&i[t].length?(n.push({$groupLabel:i[e],$isLabel:!0}),n.concat(i[t])):n},[])}}function l(t,e,i,r,o){return function(u){return u.map(function(u){var a;if(!u[i])return console.warn("Options passed to vue-multiselect do not contain groups, despite the config."),[];var l=s(u[i],t,e,o);return l.length?(a={},n.i(d.a)(a,r,u[r]),n.i(d.a)(a,i,l),a):[]})}}var c=n(59),f=n(54),p=(n.n(f),n(95)),h=(n.n(p),n(31)),d=(n.n(h),n(58)),v=n(91),g=(n.n(v),n(98)),y=(n.n(g),n(92)),m=(n.n(y),n(88)),b=(n.n(m),n(97)),_=(n.n(b),n(89)),x=(n.n(_),n(96)),w=(n.n(x),n(93)),S=(n.n(w),n(90)),O=(n.n(S),function(){for(var t=arguments.length,e=new Array(t),n=0;n<t;n++)e[n]=arguments[n];return function(t){return e.reduce(function(t,e){return e(t)},t)}});e.a={data:function(){return{search:"",isOpen:!1,preferredOpenDirection:"below",optimizedHeight:this.maxHeight}},props:{internalSearch:{type:Boolean,default:!0},options:{type:Array,required:!0},multiple:{type:Boolean,default:!1},value:{type:null,default:function(){return[]}},trackBy:{type:String},label:{type:String},searchable:{type:Boolean,default:!0},clearOnSelect:{type:Boolean,default:!0},hideSelected:{type:Boolean,default:!1},placeholder:{type:String,default:"Select option"},allowEmpty:{type:Boolean,default:!0},resetAfter:{type:Boolean,default:!1},closeOnSelect:{type:Boolean,default:!0},customLabel:{type:Function,default:function(t,e){return i(t)?"":e?t[e]:t}},taggable:{type:Boolean,default:!1},tagPlaceholder:{type:String,default:"Press enter to create a tag"},tagPosition:{type:String,default:"top"},max:{type:[Number,Boolean],default:!1},id:{default:null},optionsLimit:{type:Number,default:1e3},groupValues:{type:String},groupLabel:{type:String},groupSelect:{type:Boolean,default:!1},blockKeys:{type:Array,default:function(){return[]}},preserveSearch:{type:Boolean,default:!1},preselectFirst:{type:Boolean,default:!1}},mounted:function(){!this.multiple&&this.max&&console.warn("[Vue-Multiselect warn]: Max prop should not be used when prop Multiple equals false."),this.preselectFirst&&!this.internalValue.length&&this.options.length&&this.select(this.filteredOptions[0])},computed:{internalValue:function(){return this.value||0===this.value?Array.isArray(this.value)?this.value:[this.value]:[]},filteredOptions:function(){var t=this.search||"",e=t.toLowerCase().trim(),n=this.options.concat();return n=this.internalSearch?this.groupValues?this.filterAndFlat(n,e,this.label):s(n,e,this.label,this.customLabel):this.groupValues?a(this.groupValues,this.groupLabel)(n):n,n=this.hideSelected?n.filter(r(this.isSelected)):n,this.taggable&&e.length&&!this.isExistingOption(e)&&("bottom"===this.tagPosition?n.push({isTag:!0,label:t}):n.unshift({isTag:!0,label:t})),n.slice(0,this.optionsLimit)},valueKeys:function(){var t=this;return this.trackBy?this.internalValue.map(function(e){return e[t.trackBy]}):this.internalValue},optionKeys:function(){var t=this;return(this.groupValues?this.flatAndStrip(this.options):this.options).map(function(e){return t.customLabel(e,t.label).toString().toLowerCase()})},currentOptionLabel:function(){return this.multiple?this.searchable?"":this.placeholder:this.internalValue.length?this.getOptionLabel(this.internalValue[0]):this.searchable?"":this.placeholder}},watch:{internalValue:function(){this.resetAfter&&this.internalValue.length&&(this.search="",this.$emit("input",this.multiple?[]:null))},search:function(){this.$emit("search-change",this.search,this.id)}},methods:{getValue:function(){return this.multiple?this.internalValue:0===this.internalValue.length?null:this.internalValue[0]},filterAndFlat:function(t,e,n){return O(l(e,n,this.groupValues,this.groupLabel,this.customLabel),a(this.groupValues,this.groupLabel))(t)},flatAndStrip:function(t){return O(a(this.groupValues,this.groupLabel),u)(t)},updateSearch:function(t){this.search=t},isExistingOption:function(t){return!!this.options&&this.optionKeys.indexOf(t)>-1},isSelected:function(t){var e=this.trackBy?t[this.trackBy]:t;return this.valueKeys.indexOf(e)>-1},isOptionDisabled:function(t){return!!t.$isDisabled},getOptionLabel:function(t){if(i(t))return"";if(t.isTag)return t.label;if(t.$isLabel)return t.$groupLabel;var e=this.customLabel(t,this.label);return i(e)?"":e},select:function(t,e){if(t.$isLabel&&this.groupSelect)return void this.selectGroup(t);if(!(-1!==this.blockKeys.indexOf(e)||this.disabled||t.$isDisabled||t.$isLabel)&&(!this.max||!this.multiple||this.internalValue.length!==this.max)&&("Tab"!==e||this.pointerDirty)){if(t.isTag)this.$emit("tag",t.label,this.id),this.search="",this.closeOnSelect&&!this.multiple&&this.deactivate();else{if(this.isSelected(t))return void("Tab"!==e&&this.removeElement(t));this.$emit("select",t,this.id),this.multiple?this.$emit("input",this.internalValue.concat([t]),this.id):this.$emit("input",t,this.id),this.clearOnSelect&&(this.search="")}this.closeOnSelect&&this.deactivate()}},selectGroup:function(t){var e=this,n=this.options.find(function(n){return n[e.groupLabel]===t.$groupLabel});if(n)if(this.wholeGroupSelected(n)){this.$emit("remove",n[this.groupValues],this.id);var i=this.internalValue.filter(function(t){return-1===n[e.groupValues].indexOf(t)});this.$emit("input",i,this.id)}else{var r=n[this.groupValues].filter(function(t){return!(e.isOptionDisabled(t)||e.isSelected(t))});this.$emit("select",r,this.id),this.$emit("input",this.internalValue.concat(r),this.id)}},wholeGroupSelected:function(t){var e=this;return t[this.groupValues].every(function(t){return e.isSelected(t)||e.isOptionDisabled(t)})},wholeGroupDisabled:function(t){return t[this.groupValues].every(this.isOptionDisabled)},removeElement:function(t){var e=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];if(!this.disabled&&!t.$isDisabled){if(!this.allowEmpty&&this.internalValue.length<=1)return void this.deactivate();var i="object"===n.i(c.a)(t)?this.valueKeys.indexOf(t[this.trackBy]):this.valueKeys.indexOf(t);if(this.$emit("remove",t,this.id),this.multiple){var r=this.internalValue.slice(0,i).concat(this.internalValue.slice(i+1));this.$emit("input",r,this.id)}else this.$emit("input",null,this.id);this.closeOnSelect&&e&&this.deactivate()}},removeLastElement:function(){-1===this.blockKeys.indexOf("Delete")&&0===this.search.length&&Array.isArray(this.internalValue)&&this.internalValue.length&&this.removeElement(this.internalValue[this.internalValue.length-1],!1)},activate:function(){var t=this;this.isOpen||this.disabled||(this.adjustPosition(),this.groupValues&&0===this.pointer&&this.filteredOptions.length&&(this.pointer=1),this.isOpen=!0,this.searchable?(this.preserveSearch||(this.search=""),this.$nextTick(function(){return t.$refs.search.focus()})):this.$el.focus(),this.$emit("open",this.id))},deactivate:function(){this.isOpen&&(this.isOpen=!1,this.searchable?this.$refs.search.blur():this.$el.blur(),this.preserveSearch||(this.search=""),this.$emit("close",this.getValue(),this.id))},toggle:function(){this.isOpen?this.deactivate():this.activate()},adjustPosition:function(){if("undefined"!=typeof window){var t=this.$el.getBoundingClientRect().top,e=window.innerHeight-this.$el.getBoundingClientRect().bottom;e>this.maxHeight||e>t||"below"===this.openDirection||"bottom"===this.openDirection?(this.preferredOpenDirection="below",this.optimizedHeight=Math.min(e-40,this.maxHeight)):(this.preferredOpenDirection="above",this.optimizedHeight=Math.min(t-40,this.maxHeight))}}}}},function(t,e,n){"use strict";var i=n(54),r=(n.n(i),n(31));n.n(r);e.a={data:function(){return{pointer:0,pointerDirty:!1}},props:{showPointer:{type:Boolean,default:!0},optionHeight:{type:Number,default:40}},computed:{pointerPosition:function(){return this.pointer*this.optionHeight},visibleElements:function(){return this.optimizedHeight/this.optionHeight}},watch:{filteredOptions:function(){this.pointerAdjust()},isOpen:function(){this.pointerDirty=!1}},methods:{optionHighlight:function(t,e){return{"multiselect__option--highlight":t===this.pointer&&this.showPointer,"multiselect__option--selected":this.isSelected(e)}},groupHighlight:function(t,e){var n=this;if(!this.groupSelect)return["multiselect__option--group","multiselect__option--disabled"];var i=this.options.find(function(t){return t[n.groupLabel]===e.$groupLabel});return i&&!this.wholeGroupDisabled(i)?["multiselect__option--group",{"multiselect__option--highlight":t===this.pointer&&this.showPointer},{"multiselect__option--group-selected":this.wholeGroupSelected(i)}]:"multiselect__option--disabled"},addPointerElement:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"Enter",e=t.key;this.filteredOptions.length>0&&this.select(this.filteredOptions[this.pointer],e),this.pointerReset()},pointerForward:function(){this.pointer<this.filteredOptions.length-1&&(this.pointer++,this.$refs.list.scrollTop<=this.pointerPosition-(this.visibleElements-1)*this.optionHeight&&(this.$refs.list.scrollTop=this.pointerPosition-(this.visibleElements-1)*this.optionHeight),this.filteredOptions[this.pointer]&&this.filteredOptions[this.pointer].$isLabel&&!this.groupSelect&&this.pointerForward()),this.pointerDirty=!0},pointerBackward:function(){this.pointer>0?(this.pointer--,this.$refs.list.scrollTop>=this.pointerPosition&&(this.$refs.list.scrollTop=this.pointerPosition),this.filteredOptions[this.pointer]&&this.filteredOptions[this.pointer].$isLabel&&!this.groupSelect&&this.pointerBackward()):this.filteredOptions[this.pointer]&&this.filteredOptions[0].$isLabel&&!this.groupSelect&&this.pointerForward(),this.pointerDirty=!0},pointerReset:function(){this.closeOnSelect&&(this.pointer=0,this.$refs.list&&(this.$refs.list.scrollTop=0))},pointerAdjust:function(){this.pointer>=this.filteredOptions.length-1&&(this.pointer=this.filteredOptions.length?this.filteredOptions.length-1:0),this.filteredOptions.length>0&&this.filteredOptions[this.pointer].$isLabel&&!this.groupSelect&&this.pointerForward()},pointerSet:function(t){this.pointer=t,this.pointerDirty=!0}}}},function(t,e,n){"use strict";var i=n(36),r=n(74),o=n(15),s=n(18);t.exports=n(72)(Array,"Array",function(t,e){this._t=s(t),this._i=0,this._k=e},function(){var t=this._t,e=this._k,n=this._i++;return!t||n>=t.length?(this._t=void 0,r(1)):"keys"==e?r(0,n):"values"==e?r(0,t[n]):r(0,[n,t[n]])},"values"),o.Arguments=o.Array,i("keys"),i("values"),i("entries")},function(t,e,n){"use strict";var i=n(31),r=(n.n(i),n(32)),o=n(33);e.a={name:"vue-multiselect",mixins:[r.a,o.a],props:{name:{type:String,default:""},selectLabel:{type:String,default:"Press enter to select"},selectGroupLabel:{type:String,default:"Press enter to select group"},selectedLabel:{type:String,default:"Selected"},deselectLabel:{type:String,default:"Press enter to remove"},deselectGroupLabel:{type:String,default:"Press enter to deselect group"},showLabels:{type:Boolean,default:!0},limit:{type:Number,default:99999},maxHeight:{type:Number,default:300},limitText:{type:Function,default:function(t){return"and ".concat(t," more")}},loading:{type:Boolean,default:!1},disabled:{type:Boolean,default:!1},openDirection:{type:String,default:""},showNoOptions:{type:Boolean,default:!0},showNoResults:{type:Boolean,default:!0},tabindex:{type:Number,default:0}},computed:{isSingleLabelVisible:function(){return(this.singleValue||0===this.singleValue)&&(!this.isOpen||!this.searchable)&&!this.visibleValues.length},isPlaceholderVisible:function(){return!(this.internalValue.length||this.searchable&&this.isOpen)},visibleValues:function(){return this.multiple?this.internalValue.slice(0,this.limit):[]},singleValue:function(){return this.internalValue[0]},deselectLabelText:function(){return this.showLabels?this.deselectLabel:""},deselectGroupLabelText:function(){return this.showLabels?this.deselectGroupLabel:""},selectLabelText:function(){return this.showLabels?this.selectLabel:""},selectGroupLabelText:function(){return this.showLabels?this.selectGroupLabel:""},selectedLabelText:function(){return this.showLabels?this.selectedLabel:""},inputStyle:function(){if(this.searchable||this.multiple&&this.value&&this.value.length)return this.isOpen?{width:"100%"}:{width:"0",position:"absolute",padding:"0"}},contentStyle:function(){return this.options.length?{display:"inline-block"}:{display:"block"}},isAbove:function(){return"above"===this.openDirection||"top"===this.openDirection||"below"!==this.openDirection&&"bottom"!==this.openDirection&&"above"===this.preferredOpenDirection},showSearchInput:function(){return this.searchable&&(!this.hasSingleSelectedSlot||!this.visibleSingleValue&&0!==this.visibleSingleValue||this.isOpen)}}}},function(t,e,n){var i=n(1)("unscopables"),r=Array.prototype;void 0==r[i]&&n(8)(r,i,{}),t.exports=function(t){r[i][t]=!0}},function(t,e,n){var i=n(18),r=n(19),o=n(85);t.exports=function(t){return function(e,n,s){var u,a=i(e),l=r(a.length),c=o(s,l);if(t&&n!=n){for(;l>c;)if((u=a[c++])!=u)return!0}else for(;l>c;c++)if((t||c in a)&&a[c]===n)return t||c||0;return!t&&-1}}},function(t,e,n){var i=n(9),r=n(1)("toStringTag"),o="Arguments"==i(function(){return arguments}()),s=function(t,e){try{return t[e]}catch(t){}};t.exports=function(t){var e,n,u;return void 0===t?"Undefined":null===t?"Null":"string"==typeof(n=s(e=Object(t),r))?n:o?i(e):"Object"==(u=i(e))&&"function"==typeof e.callee?"Arguments":u}},function(t,e,n){"use strict";var i=n(2);t.exports=function(){var t=i(this),e="";return t.global&&(e+="g"),t.ignoreCase&&(e+="i"),t.multiline&&(e+="m"),t.unicode&&(e+="u"),t.sticky&&(e+="y"),e}},function(t,e,n){var i=n(0).document;t.exports=i&&i.documentElement},function(t,e,n){t.exports=!n(4)&&!n(7)(function(){return 7!=Object.defineProperty(n(21)("div"),"a",{get:function(){return 7}}).a})},function(t,e,n){var i=n(9);t.exports=Array.isArray||function(t){return"Array"==i(t)}},function(t,e,n){"use strict";function i(t){var e,n;this.promise=new t(function(t,i){if(void 0!==e||void 0!==n)throw TypeError("Bad Promise constructor");e=t,n=i}),this.resolve=r(e),this.reject=r(n)}var r=n(14);t.exports.f=function(t){return new i(t)}},function(t,e,n){var i=n(2),r=n(76),o=n(22),s=n(27)("IE_PROTO"),u=function(){},a=function(){var t,e=n(21)("iframe"),i=o.length;for(e.style.display="none",n(40).appendChild(e),e.src="javascript:",t=e.contentWindow.document,t.open(),t.write("<script>document.F=Object<\/script>"),t.close(),a=t.F;i--;)delete a.prototype[o[i]];return a()};t.exports=Object.create||function(t,e){var n;return null!==t?(u.prototype=i(t),n=new u,u.prototype=null,n[s]=t):n=a(),void 0===e?n:r(n,e)}},function(t,e,n){var i=n(79),r=n(25),o=n(18),s=n(29),u=n(12),a=n(41),l=Object.getOwnPropertyDescriptor;e.f=n(4)?l:function(t,e){if(t=o(t),e=s(e,!0),a)try{return l(t,e)}catch(t){}if(u(t,e))return r(!i.f.call(t,e),t[e])}},function(t,e,n){var i=n(12),r=n(18),o=n(37)(!1),s=n(27)("IE_PROTO");t.exports=function(t,e){var n,u=r(t),a=0,l=[];for(n in u)n!=s&&i(u,n)&&l.push(n);for(;e.length>a;)i(u,n=e[a++])&&(~o(l,n)||l.push(n));return l}},function(t,e,n){var i=n(46),r=n(22);t.exports=Object.keys||function(t){return i(t,r)}},function(t,e,n){var i=n(2),r=n(5),o=n(43);t.exports=function(t,e){if(i(t),r(e)&&e.constructor===t)return e;var n=o.f(t);return(0,n.resolve)(e),n.promise}},function(t,e,n){var i=n(10),r=n(0),o=r["__core-js_shared__"]||(r["__core-js_shared__"]={});(t.exports=function(t,e){return o[t]||(o[t]=void 0!==e?e:{})})("versions",[]).push({version:i.version,mode:n(24)?"pure":"global",copyright:"© 2018 Denis Pushkarev (zloirock.ru)"})},function(t,e,n){var i=n(2),r=n(14),o=n(1)("species");t.exports=function(t,e){var n,s=i(t).constructor;return void 0===s||void 0==(n=i(s)[o])?e:r(n)}},function(t,e,n){var i=n(3),r=n(16),o=n(7),s=n(84),u="["+s+"]",a="​",l=RegExp("^"+u+u+"*"),c=RegExp(u+u+"*$"),f=function(t,e,n){var r={},u=o(function(){return!!s[t]()||a[t]()!=a}),l=r[t]=u?e(p):s[t];n&&(r[n]=l),i(i.P+i.F*u,"String",r)},p=f.trim=function(t,e){return t=String(r(t)),1&e&&(t=t.replace(l,"")),2&e&&(t=t.replace(c,"")),t};t.exports=f},function(t,e,n){var i,r,o,s=n(11),u=n(68),a=n(40),l=n(21),c=n(0),f=c.process,p=c.setImmediate,h=c.clearImmediate,d=c.MessageChannel,v=c.Dispatch,g=0,y={},m=function(){var t=+this;if(y.hasOwnProperty(t)){var e=y[t];delete y[t],e()}},b=function(t){m.call(t.data)};p&&h||(p=function(t){for(var e=[],n=1;arguments.length>n;)e.push(arguments[n++]);return y[++g]=function(){u("function"==typeof t?t:Function(t),e)},i(g),g},h=function(t){delete y[t]},"process"==n(9)(f)?i=function(t){f.nextTick(s(m,t,1))}:v&&v.now?i=function(t){v.now(s(m,t,1))}:d?(r=new d,o=r.port2,r.port1.onmessage=b,i=s(o.postMessage,o,1)):c.addEventListener&&"function"==typeof postMessage&&!c.importScripts?(i=function(t){c.postMessage(t+"","*")},c.addEventListener("message",b,!1)):i="onreadystatechange"in l("script")?function(t){a.appendChild(l("script")).onreadystatechange=function(){a.removeChild(this),m.call(t)}}:function(t){setTimeout(s(m,t,1),0)}),t.exports={set:p,clear:h}},function(t,e){var n=Math.ceil,i=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?i:n)(t)}},function(t,e,n){"use strict";var i=n(3),r=n(20)(5),o=!0;"find"in[]&&Array(1).find(function(){o=!1}),i(i.P+i.F*o,"Array",{find:function(t){return r(this,t,arguments.length>1?arguments[1]:void 0)}}),n(36)("find")},function(t,e,n){"use strict";var i,r,o,s,u=n(24),a=n(0),l=n(11),c=n(38),f=n(3),p=n(5),h=n(14),d=n(61),v=n(66),g=n(50),y=n(52).set,m=n(75)(),b=n(43),_=n(80),x=n(86),w=n(48),S=a.TypeError,O=a.process,L=O&&O.versions,k=L&&L.v8||"",P=a.Promise,T="process"==c(O),V=function(){},E=r=b.f,A=!!function(){try{var t=P.resolve(1),e=(t.constructor={})[n(1)("species")]=function(t){t(V,V)};return(T||"function"==typeof PromiseRejectionEvent)&&t.then(V)instanceof e&&0!==k.indexOf("6.6")&&-1===x.indexOf("Chrome/66")}catch(t){}}(),C=function(t){var e;return!(!p(t)||"function"!=typeof(e=t.then))&&e},D=function(t,e){if(!t._n){t._n=!0;var n=t._c;m(function(){for(var i=t._v,r=1==t._s,o=0;n.length>o;)!function(e){var n,o,s,u=r?e.ok:e.fail,a=e.resolve,l=e.reject,c=e.domain;try{u?(r||(2==t._h&&$(t),t._h=1),!0===u?n=i:(c&&c.enter(),n=u(i),c&&(c.exit(),s=!0)),n===e.promise?l(S("Promise-chain cycle")):(o=C(n))?o.call(n,a,l):a(n)):l(i)}catch(t){c&&!s&&c.exit(),l(t)}}(n[o++]);t._c=[],t._n=!1,e&&!t._h&&j(t)})}},j=function(t){y.call(a,function(){var e,n,i,r=t._v,o=N(t);if(o&&(e=_(function(){T?O.emit("unhandledRejection",r,t):(n=a.onunhandledrejection)?n({promise:t,reason:r}):(i=a.console)&&i.error&&i.error("Unhandled promise rejection",r)}),t._h=T||N(t)?2:1),t._a=void 0,o&&e.e)throw e.v})},N=function(t){return 1!==t._h&&0===(t._a||t._c).length},$=function(t){y.call(a,function(){var e;T?O.emit("rejectionHandled",t):(e=a.onrejectionhandled)&&e({promise:t,reason:t._v})})},F=function(t){var e=this;e._d||(e._d=!0,e=e._w||e,e._v=t,e._s=2,e._a||(e._a=e._c.slice()),D(e,!0))},M=function(t){var e,n=this;if(!n._d){n._d=!0,n=n._w||n;try{if(n===t)throw S("Promise can't be resolved itself");(e=C(t))?m(function(){var i={_w:n,_d:!1};try{e.call(t,l(M,i,1),l(F,i,1))}catch(t){F.call(i,t)}}):(n._v=t,n._s=1,D(n,!1))}catch(t){F.call({_w:n,_d:!1},t)}}};A||(P=function(t){d(this,P,"Promise","_h"),h(t),i.call(this);try{t(l(M,this,1),l(F,this,1))}catch(t){F.call(this,t)}},i=function(t){this._c=[],this._a=void 0,this._s=0,this._d=!1,this._v=void 0,this._h=0,this._n=!1},i.prototype=n(81)(P.prototype,{then:function(t,e){var n=E(g(this,P));return n.ok="function"!=typeof t||t,n.fail="function"==typeof e&&e,n.domain=T?O.domain:void 0,this._c.push(n),this._a&&this._a.push(n),this._s&&D(this,!1),n.promise},catch:function(t){return this.then(void 0,t)}}),o=function(){var t=new i;this.promise=t,this.resolve=l(M,t,1),this.reject=l(F,t,1)},b.f=E=function(t){return t===P||t===s?new o(t):r(t)}),f(f.G+f.W+f.F*!A,{Promise:P}),n(26)(P,"Promise"),n(83)("Promise"),s=n(10).Promise,f(f.S+f.F*!A,"Promise",{reject:function(t){var e=E(this);return(0,e.reject)(t),e.promise}}),f(f.S+f.F*(u||!A),"Promise",{resolve:function(t){return w(u&&this===s?P:this,t)}}),f(f.S+f.F*!(A&&n(73)(function(t){P.all(t).catch(V)})),"Promise",{all:function(t){var e=this,n=E(e),i=n.resolve,r=n.reject,o=_(function(){var n=[],o=0,s=1;v(t,!1,function(t){var u=o++,a=!1;n.push(void 0),s++,e.resolve(t).then(function(t){a||(a=!0,n[u]=t,--s||i(n))},r)}),--s||i(n)});return o.e&&r(o.v),n.promise},race:function(t){var e=this,n=E(e),i=n.reject,r=_(function(){v(t,!1,function(t){e.resolve(t).then(n.resolve,i)})});return r.e&&i(r.v),n.promise}})},function(t,e,n){"use strict";var i=n(3),r=n(10),o=n(0),s=n(50),u=n(48);i(i.P+i.R,"Promise",{finally:function(t){var e=s(this,r.Promise||o.Promise),n="function"==typeof t;return this.then(n?function(n){return u(e,t()).then(function(){return n})}:t,n?function(n){return u(e,t()).then(function(){throw n})}:t)}})},function(t,e,n){"use strict";function i(t){n(99)}var r=n(35),o=n(101),s=n(100),u=i,a=s(r.a,o.a,!1,u,null,null);e.a=a.exports},function(t,e,n){"use strict";function i(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}e.a=i},function(t,e,n){"use strict";function i(t){return(i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t})(t)}function r(t){return(r="function"==typeof Symbol&&"symbol"===i(Symbol.iterator)?function(t){return i(t)}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":i(t)})(t)}e.a=r},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=n(34),r=(n.n(i),n(55)),o=(n.n(r),n(56)),s=(n.n(o),n(57)),u=n(32),a=n(33);n.d(e,"Multiselect",function(){return s.a}),n.d(e,"multiselectMixin",function(){return u.a}),n.d(e,"pointerMixin",function(){return a.a}),e.default=s.a},function(t,e){t.exports=function(t,e,n,i){if(!(t instanceof e)||void 0!==i&&i in t)throw TypeError(n+": incorrect invocation!");return t}},function(t,e,n){var i=n(14),r=n(28),o=n(23),s=n(19);t.exports=function(t,e,n,u,a){i(e);var l=r(t),c=o(l),f=s(l.length),p=a?f-1:0,h=a?-1:1;if(n<2)for(;;){if(p in c){u=c[p],p+=h;break}if(p+=h,a?p<0:f<=p)throw TypeError("Reduce of empty array with no initial value")}for(;a?p>=0:f>p;p+=h)p in c&&(u=e(u,c[p],p,l));return u}},function(t,e,n){var i=n(5),r=n(42),o=n(1)("species");t.exports=function(t){var e;return r(t)&&(e=t.constructor,"function"!=typeof e||e!==Array&&!r(e.prototype)||(e=void 0),i(e)&&null===(e=e[o])&&(e=void 0)),void 0===e?Array:e}},function(t,e,n){var i=n(63);t.exports=function(t,e){return new(i(t))(e)}},function(t,e,n){"use strict";var i=n(8),r=n(6),o=n(7),s=n(16),u=n(1);t.exports=function(t,e,n){var a=u(t),l=n(s,a,""[t]),c=l[0],f=l[1];o(function(){var e={};return e[a]=function(){return 7},7!=""[t](e)})&&(r(String.prototype,t,c),i(RegExp.prototype,a,2==e?function(t,e){return f.call(t,this,e)}:function(t){return f.call(t,this)}))}},function(t,e,n){var i=n(11),r=n(70),o=n(69),s=n(2),u=n(19),a=n(87),l={},c={},e=t.exports=function(t,e,n,f,p){var h,d,v,g,y=p?function(){return t}:a(t),m=i(n,f,e?2:1),b=0;if("function"!=typeof y)throw TypeError(t+" is not iterable!");if(o(y)){for(h=u(t.length);h>b;b++)if((g=e?m(s(d=t[b])[0],d[1]):m(t[b]))===l||g===c)return g}else for(v=y.call(t);!(d=v.next()).done;)if((g=r(v,m,d.value,e))===l||g===c)return g};e.BREAK=l,e.RETURN=c},function(t,e,n){var i=n(5),r=n(82).set;t.exports=function(t,e,n){var o,s=e.constructor;return s!==n&&"function"==typeof s&&(o=s.prototype)!==n.prototype&&i(o)&&r&&r(t,o),t}},function(t,e){t.exports=function(t,e,n){var i=void 0===n;switch(e.length){case 0:return i?t():t.call(n);case 1:return i?t(e[0]):t.call(n,e[0]);case 2:return i?t(e[0],e[1]):t.call(n,e[0],e[1]);case 3:return i?t(e[0],e[1],e[2]):t.call(n,e[0],e[1],e[2]);case 4:return i?t(e[0],e[1],e[2],e[3]):t.call(n,e[0],e[1],e[2],e[3])}return t.apply(n,e)}},function(t,e,n){var i=n(15),r=n(1)("iterator"),o=Array.prototype;t.exports=function(t){return void 0!==t&&(i.Array===t||o[r]===t)}},function(t,e,n){var i=n(2);t.exports=function(t,e,n,r){try{return r?e(i(n)[0],n[1]):e(n)}catch(e){var o=t.return;throw void 0!==o&&i(o.call(t)),e}}},function(t,e,n){"use strict";var i=n(44),r=n(25),o=n(26),s={};n(8)(s,n(1)("iterator"),function(){return this}),t.exports=function(t,e,n){t.prototype=i(s,{next:r(1,n)}),o(t,e+" Iterator")}},function(t,e,n){"use strict";var i=n(24),r=n(3),o=n(6),s=n(8),u=n(15),a=n(71),l=n(26),c=n(78),f=n(1)("iterator"),p=!([].keys&&"next"in[].keys()),h=function(){return this};t.exports=function(t,e,n,d,v,g,y){a(n,e,d);var m,b,_,x=function(t){if(!p&&t in L)return L[t];switch(t){case"keys":case"values":return function(){return new n(this,t)}}return function(){return new n(this,t)}},w=e+" Iterator",S="values"==v,O=!1,L=t.prototype,k=L[f]||L["@@iterator"]||v&&L[v],P=k||x(v),T=v?S?x("entries"):P:void 0,V="Array"==e?L.entries||k:k;if(V&&(_=c(V.call(new t)))!==Object.prototype&&_.next&&(l(_,w,!0),i||"function"==typeof _[f]||s(_,f,h)),S&&k&&"values"!==k.name&&(O=!0,P=function(){return k.call(this)}),i&&!y||!p&&!O&&L[f]||s(L,f,P),u[e]=P,u[w]=h,v)if(m={values:S?P:x("values"),keys:g?P:x("keys"),entries:T},y)for(b in m)b in L||o(L,b,m[b]);else r(r.P+r.F*(p||O),e,m);return m}},function(t,e,n){var i=n(1)("iterator"),r=!1;try{var o=[7][i]();o.return=function(){r=!0},Array.from(o,function(){throw 2})}catch(t){}t.exports=function(t,e){if(!e&&!r)return!1;var n=!1;try{var o=[7],s=o[i]();s.next=function(){return{done:n=!0}},o[i]=function(){return s},t(o)}catch(t){}return n}},function(t,e){t.exports=function(t,e){return{value:e,done:!!t}}},function(t,e,n){var i=n(0),r=n(52).set,o=i.MutationObserver||i.WebKitMutationObserver,s=i.process,u=i.Promise,a="process"==n(9)(s);t.exports=function(){var t,e,n,l=function(){var i,r;for(a&&(i=s.domain)&&i.exit();t;){r=t.fn,t=t.next;try{r()}catch(i){throw t?n():e=void 0,i}}e=void 0,i&&i.enter()};if(a)n=function(){s.nextTick(l)};else if(!o||i.navigator&&i.navigator.standalone)if(u&&u.resolve){var c=u.resolve(void 0);n=function(){c.then(l)}}else n=function(){r.call(i,l)};else{var f=!0,p=document.createTextNode("");new o(l).observe(p,{characterData:!0}),n=function(){p.data=f=!f}}return function(i){var r={fn:i,next:void 0};e&&(e.next=r),t||(t=r,n()),e=r}}},function(t,e,n){var i=n(13),r=n(2),o=n(47);t.exports=n(4)?Object.defineProperties:function(t,e){r(t);for(var n,s=o(e),u=s.length,a=0;u>a;)i.f(t,n=s[a++],e[n]);return t}},function(t,e,n){var i=n(46),r=n(22).concat("length","prototype");e.f=Object.getOwnPropertyNames||function(t){return i(t,r)}},function(t,e,n){var i=n(12),r=n(28),o=n(27)("IE_PROTO"),s=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=r(t),i(t,o)?t[o]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?s:null}},function(t,e){e.f={}.propertyIsEnumerable},function(t,e){t.exports=function(t){try{return{e:!1,v:t()}}catch(t){return{e:!0,v:t}}}},function(t,e,n){var i=n(6);t.exports=function(t,e,n){for(var r in e)i(t,r,e[r],n);return t}},function(t,e,n){var i=n(5),r=n(2),o=function(t,e){if(r(t),!i(e)&&null!==e)throw TypeError(e+": can't set as prototype!")};t.exports={set:Object.setPrototypeOf||("__proto__"in{}?function(t,e,i){try{i=n(11)(Function.call,n(45).f(Object.prototype,"__proto__").set,2),i(t,[]),e=!(t instanceof Array)}catch(t){e=!0}return function(t,n){return o(t,n),e?t.__proto__=n:i(t,n),t}}({},!1):void 0),check:o}},function(t,e,n){"use strict";var i=n(0),r=n(13),o=n(4),s=n(1)("species");t.exports=function(t){var e=i[t];o&&e&&!e[s]&&r.f(e,s,{configurable:!0,get:function(){return this}})}},function(t,e){t.exports="\t\n\v\f\r   ᠎             　\u2028\u2029\ufeff"},function(t,e,n){var i=n(53),r=Math.max,o=Math.min;t.exports=function(t,e){return t=i(t),t<0?r(t+e,0):o(t,e)}},function(t,e,n){var i=n(0),r=i.navigator;t.exports=r&&r.userAgent||""},function(t,e,n){var i=n(38),r=n(1)("iterator"),o=n(15);t.exports=n(10).getIteratorMethod=function(t){if(void 0!=t)return t[r]||t["@@iterator"]||o[i(t)]}},function(t,e,n){"use strict";var i=n(3),r=n(20)(2);i(i.P+i.F*!n(17)([].filter,!0),"Array",{filter:function(t){return r(this,t,arguments[1])}})},function(t,e,n){"use strict";var i=n(3),r=n(37)(!1),o=[].indexOf,s=!!o&&1/[1].indexOf(1,-0)<0;i(i.P+i.F*(s||!n(17)(o)),"Array",{indexOf:function(t){return s?o.apply(this,arguments)||0:r(this,t,arguments[1])}})},function(t,e,n){var i=n(3);i(i.S,"Array",{isArray:n(42)})},function(t,e,n){"use strict";var i=n(3),r=n(20)(1);i(i.P+i.F*!n(17)([].map,!0),"Array",{map:function(t){return r(this,t,arguments[1])}})},function(t,e,n){"use strict";var i=n(3),r=n(62);i(i.P+i.F*!n(17)([].reduce,!0),"Array",{reduce:function(t){return r(this,t,arguments.length,arguments[1],!1)}})},function(t,e,n){var i=Date.prototype,r=i.toString,o=i.getTime;new Date(NaN)+""!="Invalid Date"&&n(6)(i,"toString",function(){var t=o.call(this);return t===t?r.call(this):"Invalid Date"})},function(t,e,n){n(4)&&"g"!=/./g.flags&&n(13).f(RegExp.prototype,"flags",{configurable:!0,get:n(39)})},function(t,e,n){n(65)("search",1,function(t,e,n){return[function(n){"use strict";var i=t(this),r=void 0==n?void 0:n[e];return void 0!==r?r.call(n,i):new RegExp(n)[e](String(i))},n]})},function(t,e,n){"use strict";n(94);var i=n(2),r=n(39),o=n(4),s=/./.toString,u=function(t){n(6)(RegExp.prototype,"toString",t,!0)};n(7)(function(){return"/a/b"!=s.call({source:"a",flags:"b"})})?u(function(){var t=i(this);return"/".concat(t.source,"/","flags"in t?t.flags:!o&&t instanceof RegExp?r.call(t):void 0)}):"toString"!=s.name&&u(function(){return s.call(this)})},function(t,e,n){"use strict";n(51)("trim",function(t){return function(){return t(this,3)}})},function(t,e,n){for(var i=n(34),r=n(47),o=n(6),s=n(0),u=n(8),a=n(15),l=n(1),c=l("iterator"),f=l("toStringTag"),p=a.Array,h={CSSRuleList:!0,CSSStyleDeclaration:!1,CSSValueList:!1,ClientRectList:!1,DOMRectList:!1,DOMStringList:!1,DOMTokenList:!0,DataTransferItemList:!1,FileList:!1,HTMLAllCollection:!1,HTMLCollection:!1,HTMLFormElement:!1,HTMLSelectElement:!1,MediaList:!0,MimeTypeArray:!1,NamedNodeMap:!1,NodeList:!0,PaintRequestList:!1,Plugin:!1,PluginArray:!1,SVGLengthList:!1,SVGNumberList:!1,SVGPathSegList:!1,SVGPointList:!1,SVGStringList:!1,SVGTransformList:!1,SourceBufferList:!1,StyleSheetList:!0,TextTrackCueList:!1,TextTrackList:!1,TouchList:!1},d=r(h),v=0;v<d.length;v++){var g,y=d[v],m=h[y],b=s[y],_=b&&b.prototype;if(_&&(_[c]||u(_,c,p),_[f]||u(_,f,y),a[y]=p,m))for(g in i)_[g]||o(_,g,i[g],!0)}},function(t,e){},function(t,e){t.exports=function(t,e,n,i,r,o){var s,u=t=t||{},a=typeof t.default;"object"!==a&&"function"!==a||(s=t,u=t.default);var l="function"==typeof u?u.options:u;e&&(l.render=e.render,l.staticRenderFns=e.staticRenderFns,l._compiled=!0),n&&(l.functional=!0),r&&(l._scopeId=r);var c;if(o?(c=function(t){t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,t||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),i&&i.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(o)},l._ssrRegister=c):i&&(c=i),c){var f=l.functional,p=f?l.render:l.beforeCreate;f?(l._injectStyles=c,l.render=function(t,e){return c.call(e),p(t,e)}):l.beforeCreate=p?[].concat(p,c):[c]}return{esModule:s,exports:u,options:l}}},function(t,e,n){"use strict";var i=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"multiselect",class:{"multiselect--active":t.isOpen,"multiselect--disabled":t.disabled,"multiselect--above":t.isAbove},attrs:{tabindex:t.searchable?-1:t.tabindex},on:{focus:function(e){t.activate()},blur:function(e){!t.searchable&&t.deactivate()},keydown:[function(e){return"button"in e||!t._k(e.keyCode,"down",40,e.key,["Down","ArrowDown"])?e.target!==e.currentTarget?null:(e.preventDefault(),void t.pointerForward()):null},function(e){return"button"in e||!t._k(e.keyCode,"up",38,e.key,["Up","ArrowUp"])?e.target!==e.currentTarget?null:(e.preventDefault(),void t.pointerBackward()):null}],keypress:function(e){return"button"in e||!t._k(e.keyCode,"enter",13,e.key,"Enter")||!t._k(e.keyCode,"tab",9,e.key,"Tab")?(e.stopPropagation(),e.target!==e.currentTarget?null:void t.addPointerElement(e)):null},keyup:function(e){if(!("button"in e)&&t._k(e.keyCode,"esc",27,e.key,"Escape"))return null;t.deactivate()}}},[t._t("caret",[n("div",{staticClass:"multiselect__select",on:{mousedown:function(e){e.preventDefault(),e.stopPropagation(),t.toggle()}}})],{toggle:t.toggle}),t._v(" "),t._t("clear",null,{search:t.search}),t._v(" "),n("div",{ref:"tags",staticClass:"multiselect__tags"},[t._t("selection",[n("div",{directives:[{name:"show",rawName:"v-show",value:t.visibleValues.length>0,expression:"visibleValues.length > 0"}],staticClass:"multiselect__tags-wrap"},[t._l(t.visibleValues,function(e,i){return[t._t("tag",[n("span",{key:i,staticClass:"multiselect__tag"},[n("span",{domProps:{textContent:t._s(t.getOptionLabel(e))}}),t._v(" "),n("i",{staticClass:"multiselect__tag-icon",attrs:{"aria-hidden":"true",tabindex:"1"},on:{keypress:function(n){if(!("button"in n)&&t._k(n.keyCode,"enter",13,n.key,"Enter"))return null;n.preventDefault(),t.removeElement(e)},mousedown:function(n){n.preventDefault(),t.removeElement(e)}}})])],{option:e,search:t.search,remove:t.removeElement})]})],2),t._v(" "),t.internalValue&&t.internalValue.length>t.limit?[t._t("limit",[n("strong",{staticClass:"multiselect__strong",domProps:{textContent:t._s(t.limitText(t.internalValue.length-t.limit))}})])]:t._e()],{search:t.search,remove:t.removeElement,values:t.visibleValues,isOpen:t.isOpen}),t._v(" "),n("transition",{attrs:{name:"multiselect__loading"}},[t._t("loading",[n("div",{directives:[{name:"show",rawName:"v-show",value:t.loading,expression:"loading"}],staticClass:"multiselect__spinner"})])],2),t._v(" "),t.searchable?n("input",{ref:"search",staticClass:"multiselect__input",style:t.inputStyle,attrs:{name:t.name,id:t.id,type:"text",autocomplete:"nope",placeholder:t.placeholder,disabled:t.disabled,tabindex:t.tabindex},domProps:{value:t.search},on:{input:function(e){t.updateSearch(e.target.value)},focus:function(e){e.preventDefault(),t.activate()},blur:function(e){e.preventDefault(),t.deactivate()},keyup:function(e){if(!("button"in e)&&t._k(e.keyCode,"esc",27,e.key,"Escape"))return null;t.deactivate()},keydown:[function(e){if(!("button"in e)&&t._k(e.keyCode,"down",40,e.key,["Down","ArrowDown"]))return null;e.preventDefault(),t.pointerForward()},function(e){if(!("button"in e)&&t._k(e.keyCode,"up",38,e.key,["Up","ArrowUp"]))return null;e.preventDefault(),t.pointerBackward()},function(e){if(!("button"in e)&&t._k(e.keyCode,"delete",[8,46],e.key,["Backspace","Delete"]))return null;e.stopPropagation(),t.removeLastElement()}],keypress:function(e){return"button"in e||!t._k(e.keyCode,"enter",13,e.key,"Enter")?(e.preventDefault(),e.stopPropagation(),e.target!==e.currentTarget?null:void t.addPointerElement(e)):null}}}):t._e(),t._v(" "),t.isSingleLabelVisible?n("span",{staticClass:"multiselect__single",on:{mousedown:function(e){return e.preventDefault(),t.toggle(e)}}},[t._t("singleLabel",[[t._v(t._s(t.currentOptionLabel))]],{option:t.singleValue})],2):t._e(),t._v(" "),t.isPlaceholderVisible?n("span",{staticClass:"multiselect__placeholder",on:{mousedown:function(e){return e.preventDefault(),t.toggle(e)}}},[t._t("placeholder",[t._v("\n          "+t._s(t.placeholder)+"\n        ")])],2):t._e()],2),t._v(" "),n("transition",{attrs:{name:"multiselect"}},[n("div",{directives:[{name:"show",rawName:"v-show",value:t.isOpen,expression:"isOpen"}],ref:"list",staticClass:"multiselect__content-wrapper",style:{maxHeight:t.optimizedHeight+"px"},attrs:{tabindex:"-1"},on:{focus:t.activate,mousedown:function(t){t.preventDefault()}}},[n("ul",{staticClass:"multiselect__content",style:t.contentStyle},[t._t("beforeList"),t._v(" "),t.multiple&&t.max===t.internalValue.length?n("li",[n("span",{staticClass:"multiselect__option"},[t._t("maxElements",[t._v("Maximum of "+t._s(t.max)+" options selected. First remove a selected option to select another.")])],2)]):t._e(),t._v(" "),!t.max||t.internalValue.length<t.max?t._l(t.filteredOptions,function(e,i){return n("li",{key:i,staticClass:"multiselect__element"},[e&&(e.$isLabel||e.$isDisabled)?t._e():n("span",{staticClass:"multiselect__option",class:t.optionHighlight(i,e),attrs:{"data-select":e&&e.isTag?t.tagPlaceholder:t.selectLabelText,"data-selected":t.selectedLabelText,"data-deselect":t.deselectLabelText},on:{click:function(n){n.stopPropagation(),t.select(e)},mouseenter:function(e){if(e.target!==e.currentTarget)return null;t.pointerSet(i)}}},[t._t("option",[n("span",[t._v(t._s(t.getOptionLabel(e)))])],{option:e,search:t.search})],2),t._v(" "),e&&(e.$isLabel||e.$isDisabled)?n("span",{staticClass:"multiselect__option",class:t.groupHighlight(i,e),attrs:{"data-select":t.groupSelect&&t.selectGroupLabelText,"data-deselect":t.groupSelect&&t.deselectGroupLabelText},on:{mouseenter:function(e){if(e.target!==e.currentTarget)return null;t.groupSelect&&t.pointerSet(i)},mousedown:function(n){n.preventDefault(),t.selectGroup(e)}}},[t._t("option",[n("span",[t._v(t._s(t.getOptionLabel(e)))])],{option:e,search:t.search})],2):t._e()])}):t._e(),t._v(" "),n("li",{directives:[{name:"show",rawName:"v-show",value:t.showNoResults&&0===t.filteredOptions.length&&t.search&&!t.loading,expression:"showNoResults && (filteredOptions.length === 0 && search && !loading)"}]},[n("span",{staticClass:"multiselect__option"},[t._t("noResult",[t._v("No elements found. Consider changing the search query.")],{search:t.search})],2)]),t._v(" "),n("li",{directives:[{name:"show",rawName:"v-show",value:t.showNoOptions&&0===t.options.length&&!t.search&&!t.loading,expression:"showNoOptions && (options.length === 0 && !search && !loading)"}]},[n("span",{staticClass:"multiselect__option"},[t._t("noOptions",[t._v("List is empty.")])],2)]),t._v(" "),t._t("afterList")],2)])])],2)},r=[],o={render:i,staticRenderFns:r};e.a=o}])});
+
+/***/ }),
+/* 147 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+ /*! 
+  * portal-vue © Thorsten Lünborg, 2019 
+  * 
+  * Version: 2.1.4
+  * 
+  * LICENCE: MIT 
+  * 
+  * https://github.com/linusborg/portal-vue
+  * 
+ */
+
+
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var Vue = _interopDefault(__webpack_require__(35));
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function (obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function (obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+var inBrowser = typeof window !== 'undefined';
+function freeze(item) {
+  if (Array.isArray(item) || _typeof(item) === 'object') {
+    return Object.freeze(item);
+  }
+
+  return item;
+}
+function combinePassengers(transports) {
+  var slotProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  return transports.reduce(function (passengers, transport) {
+    var temp = transport.passengers[0];
+    var newPassengers = typeof temp === 'function' ? temp(slotProps) : transport.passengers;
+    return passengers.concat(newPassengers);
+  }, []);
+}
+function stableSort(array, compareFn) {
+  return array.map(function (v, idx) {
+    return [idx, v];
+  }).sort(function (a, b) {
+    return compareFn(a[1], b[1]) || a[0] - b[0];
+  }).map(function (c) {
+    return c[1];
+  });
+}
+function pick(obj, keys) {
+  return keys.reduce(function (acc, key) {
+    if (obj.hasOwnProperty(key)) {
+      acc[key] = obj[key];
+    }
+
+    return acc;
+  }, {});
+}
+
+var transports = {};
+var targets = {};
+var sources = {};
+var Wormhole = Vue.extend({
+  data: function data() {
+    return {
+      transports: transports,
+      targets: targets,
+      sources: sources,
+      trackInstances: inBrowser
+    };
+  },
+  methods: {
+    open: function open(transport) {
+      if (!inBrowser) return;
+      var to = transport.to,
+          from = transport.from,
+          passengers = transport.passengers,
+          _transport$order = transport.order,
+          order = _transport$order === void 0 ? Infinity : _transport$order;
+      if (!to || !from || !passengers) return;
+      var newTransport = {
+        to: to,
+        from: from,
+        passengers: freeze(passengers),
+        order: order
+      };
+      var keys = Object.keys(this.transports);
+
+      if (keys.indexOf(to) === -1) {
+        Vue.set(this.transports, to, []);
+      }
+
+      var currentIndex = this.$_getTransportIndex(newTransport); // Copying the array here so that the PortalTarget change event will actually contain two distinct arrays
+
+      var newTransports = this.transports[to].slice(0);
+
+      if (currentIndex === -1) {
+        newTransports.push(newTransport);
+      } else {
+        newTransports[currentIndex] = newTransport;
+      }
+
+      this.transports[to] = stableSort(newTransports, function (a, b) {
+        return a.order - b.order;
+      });
+    },
+    close: function close(transport) {
+      var force = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+      var to = transport.to,
+          from = transport.from;
+      if (!to || !from) return;
+
+      if (!this.transports[to]) {
+        return;
+      }
+
+      if (force) {
+        this.transports[to] = [];
+      } else {
+        var index = this.$_getTransportIndex(transport);
+
+        if (index >= 0) {
+          // Copying the array here so that the PortalTarget change event will actually contain two distinct arrays
+          var newTransports = this.transports[to].slice(0);
+          newTransports.splice(index, 1);
+          this.transports[to] = newTransports;
+        }
+      }
+    },
+    registerTarget: function registerTarget(target, vm, force) {
+      if (!inBrowser) return;
+
+      if (this.trackInstances && !force && this.targets[target]) {
+        console.warn("[portal-vue]: Target ".concat(target, " already exists"));
+      }
+
+      this.$set(this.targets, target, Object.freeze([vm]));
+    },
+    unregisterTarget: function unregisterTarget(target) {
+      this.$delete(this.targets, target);
+    },
+    registerSource: function registerSource(source, vm, force) {
+      if (!inBrowser) return;
+
+      if (this.trackInstances && !force && this.sources[source]) {
+        console.warn("[portal-vue]: source ".concat(source, " already exists"));
+      }
+
+      this.$set(this.sources, source, Object.freeze([vm]));
+    },
+    unregisterSource: function unregisterSource(source) {
+      this.$delete(this.sources, source);
+    },
+    hasTarget: function hasTarget(to) {
+      return !!(this.targets[to] && this.targets[to][0]);
+    },
+    hasSource: function hasSource(to) {
+      return !!(this.sources[to] && this.sources[to][0]);
+    },
+    hasContentFor: function hasContentFor(to) {
+      return !!this.transports[to] && !!this.transports[to].length;
+    },
+    // Internal
+    $_getTransportIndex: function $_getTransportIndex(_ref) {
+      var to = _ref.to,
+          from = _ref.from;
+
+      for (var i in this.transports[to]) {
+        if (this.transports[to][i].from === from) {
+          return +i;
+        }
+      }
+
+      return -1;
+    }
+  }
+});
+var wormhole = new Wormhole(transports);
+
+var _id = 1;
+var Portal = Vue.extend({
+  name: 'portal',
+  props: {
+    disabled: {
+      type: Boolean
+    },
+    name: {
+      type: String,
+      default: function _default() {
+        return String(_id++);
+      }
+    },
+    order: {
+      type: Number,
+      default: 0
+    },
+    slim: {
+      type: Boolean
+    },
+    slotProps: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    },
+    tag: {
+      type: String,
+      default: 'DIV'
+    },
+    to: {
+      type: String,
+      default: function _default() {
+        return String(Math.round(Math.random() * 10000000));
+      }
+    }
+  },
+  created: function created() {
+    var _this = this;
+
+    this.$nextTick(function () {
+      wormhole.registerSource(_this.name, _this);
+    });
+  },
+  mounted: function mounted() {
+    if (!this.disabled) {
+      this.sendUpdate();
+    }
+  },
+  updated: function updated() {
+    if (this.disabled) {
+      this.clear();
+    } else {
+      this.sendUpdate();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    wormhole.unregisterSource(this.name);
+    this.clear();
+  },
+  watch: {
+    to: function to(newValue, oldValue) {
+      oldValue && oldValue !== newValue && this.clear(oldValue);
+      this.sendUpdate();
+    }
+  },
+  methods: {
+    clear: function clear(target) {
+      var closer = {
+        from: this.name,
+        to: target || this.to
+      };
+      wormhole.close(closer);
+    },
+    normalizeSlots: function normalizeSlots() {
+      return this.$scopedSlots.default ? [this.$scopedSlots.default] : this.$slots.default;
+    },
+    normalizeOwnChildren: function normalizeOwnChildren(children) {
+      return typeof children === 'function' ? children(this.slotProps) : children;
+    },
+    sendUpdate: function sendUpdate() {
+      var slotContent = this.normalizeSlots();
+
+      if (slotContent) {
+        var transport = {
+          from: this.name,
+          to: this.to,
+          passengers: _toConsumableArray(slotContent),
+          order: this.order
+        };
+        wormhole.open(transport);
+      } else {
+        this.clear();
+      }
+    }
+  },
+  render: function render(h) {
+    var children = this.$slots.default || this.$scopedSlots.default || [];
+    var Tag = this.tag;
+
+    if (children && this.disabled) {
+      return children.length <= 1 && this.slim ? this.normalizeOwnChildren(children)[0] : h(Tag, [this.normalizeOwnChildren(children)]);
+    } else {
+      return this.slim ? h() : h(Tag, {
+        class: {
+          'v-portal': true
+        },
+        style: {
+          display: 'none'
+        },
+        key: 'v-portal-placeholder'
+      });
+    }
+  }
+});
+
+var PortalTarget = Vue.extend({
+  name: 'portalTarget',
+  props: {
+    multiple: {
+      type: Boolean,
+      default: false
+    },
+    name: {
+      type: String,
+      required: true
+    },
+    slim: {
+      type: Boolean,
+      default: false
+    },
+    slotProps: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    },
+    tag: {
+      type: String,
+      default: 'div'
+    },
+    transition: {
+      type: [String, Object, Function]
+    }
+  },
+  data: function data() {
+    return {
+      transports: wormhole.transports,
+      firstRender: true
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    this.$nextTick(function () {
+      wormhole.registerTarget(_this.name, _this);
+    });
+  },
+  watch: {
+    ownTransports: function ownTransports() {
+      this.$emit('change', this.children().length > 0);
+    },
+    name: function name(newVal, oldVal) {
+      /**
+       * TODO
+       * This should warn as well ...
+       */
+      wormhole.unregisterTarget(oldVal);
+      wormhole.registerTarget(newVal, this);
+    }
+  },
+  mounted: function mounted() {
+    var _this2 = this;
+
+    if (this.transition) {
+      this.$nextTick(function () {
+        // only when we have a transition, because it causes a re-render
+        _this2.firstRender = false;
+      });
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    wormhole.unregisterTarget(this.name);
+  },
+  computed: {
+    ownTransports: function ownTransports() {
+      var transports = this.transports[this.name] || [];
+
+      if (this.multiple) {
+        return transports;
+      }
+
+      return transports.length === 0 ? [] : [transports[transports.length - 1]];
+    },
+    passengers: function passengers() {
+      return combinePassengers(this.ownTransports, this.slotProps);
+    }
+  },
+  methods: {
+    // can't be a computed prop because it has to "react" to $slot changes.
+    children: function children() {
+      return this.passengers.length !== 0 ? this.passengers : this.$scopedSlots.default ? this.$scopedSlots.default(this.slotProps) : this.$slots.default || [];
+    },
+    // can't be a computed prop because it has to "react" to this.children().
+    noWrapper: function noWrapper() {
+      var noWrapper = this.slim && !this.transition;
+
+      if (noWrapper && this.children().length > 1) {
+        console.warn('[portal-vue]: PortalTarget with `slim` option received more than one child element.');
+      }
+
+      return noWrapper;
+    }
+  },
+  render: function render(h) {
+    var noWrapper = this.noWrapper();
+    var children = this.children();
+    var Tag = this.transition || this.tag;
+    return noWrapper ? children[0] : this.slim && !Tag ? h() : h(Tag, {
+      props: {
+        // if we have a transition component, pass the tag if it exists
+        tag: this.transition && this.tag ? this.tag : undefined
+      },
+      class: {
+        'vue-portal-target': true
+      }
+    }, children);
+  }
+});
+
+var _id$1 = 0;
+var portalProps = ['disabled', 'name', 'order', 'slim', 'slotProps', 'tag', 'to'];
+var targetProps = ['multiple', 'transition'];
+var MountingPortal = Vue.extend({
+  name: 'MountingPortal',
+  inheritAttrs: false,
+  props: {
+    append: {
+      type: [Boolean, String]
+    },
+    bail: {
+      type: Boolean
+    },
+    mountTo: {
+      type: String,
+      required: true
+    },
+    // Portal
+    disabled: {
+      type: Boolean
+    },
+    // name for the portal
+    name: {
+      type: String,
+      default: function _default() {
+        return 'mounted_' + String(_id$1++);
+      }
+    },
+    order: {
+      type: Number,
+      default: 0
+    },
+    slim: {
+      type: Boolean
+    },
+    slotProps: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    },
+    tag: {
+      type: String,
+      default: 'DIV'
+    },
+    // name for the target
+    to: {
+      type: String,
+      default: function _default() {
+        return String(Math.round(Math.random() * 10000000));
+      }
+    },
+    // Target
+    multiple: {
+      type: Boolean,
+      default: false
+    },
+    targetSlim: {
+      type: Boolean
+    },
+    targetSlotProps: {
+      type: Object,
+      default: function _default() {
+        return {};
+      }
+    },
+    targetTag: {
+      type: String,
+      default: 'div'
+    },
+    transition: {
+      type: [String, Object, Function]
+    }
+  },
+  created: function created() {
+    if (typeof document === 'undefined') return;
+    var el = document.querySelector(this.mountTo);
+
+    if (!el) {
+      console.error("[portal-vue]: Mount Point '".concat(this.mountTo, "' not found in document"));
+      return;
+    }
+
+    var props = this.$props; // Target already exists
+
+    if (wormhole.targets[props.name]) {
+      if (props.bail) {
+        console.warn("[portal-vue]: Target ".concat(props.name, " is already mounted.\n        Aborting because 'bail: true' is set"));
+      } else {
+        this.portalTarget = wormhole.targets[props.name];
+      }
+
+      return;
+    }
+
+    var append = props.append;
+
+    if (append) {
+      var type = typeof append === 'string' ? append : 'DIV';
+      var mountEl = document.createElement(type);
+      el.appendChild(mountEl);
+      el = mountEl;
+    } // get props for target from $props
+    // we have to rename a few of them
+
+
+    var _props = pick(this.$props, targetProps);
+
+    _props.slim = this.targetSlim;
+    _props.tag = this.targetTag;
+    _props.slotProps = this.targetSlotProps;
+    _props.name = this.to;
+    this.portalTarget = new PortalTarget({
+      el: el,
+      parent: this.$parent || this,
+      propsData: _props
+    });
+  },
+  beforeDestroy: function beforeDestroy() {
+    var target = this.portalTarget;
+
+    if (this.append) {
+      var el = target.$el;
+      el.parentNode.removeChild(el);
+    }
+
+    target.$destroy();
+  },
+  render: function render(h) {
+    if (!this.portalTarget) {
+      console.warn("[portal-vue] Target wasn't mounted");
+      return h();
+    } // if there's no "manual" scoped slot, so we create a <Portal> ourselves
+
+
+    if (!this.$scopedSlots.manual) {
+      var props = pick(this.$props, portalProps);
+      return h(Portal, {
+        props: props,
+        attrs: this.$attrs,
+        on: this.$listeners,
+        scopedSlots: this.$scopedSlots
+      }, this.$slots.default);
+    } // else, we render the scoped slot
+
+
+    var content = this.$scopedSlots.manual({
+      to: this.to
+    }); // if user used <template> for the scoped slot
+    // content will be an array
+
+    if (Array.isArray(content)) {
+      content = content[0];
+    }
+
+    if (!content) return h();
+    return content;
+  }
+});
+
+function install(Vue$$1) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  Vue$$1.component(options.portalName || 'Portal', Portal);
+  Vue$$1.component(options.portalTargetName || 'PortalTarget', PortalTarget);
+  Vue$$1.component(options.MountingPortalName || 'MountingPortal', MountingPortal);
+}
+
+var index = {
+  install: install
+};
+
+exports.default = index;
+exports.Portal = Portal;
+exports.PortalTarget = PortalTarget;
+exports.MountingPortal = MountingPortal;
+exports.Wormhole = wormhole;
+//# sourceMappingURL=portal-vue.common.js.map
+
+
+/***/ }),
+/* 148 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = exports.props = void 0;
+
+var _vue = _interopRequireDefault(__webpack_require__(44));
+
+var _portalVue = __webpack_require__(147);
+
+var _modalManager = _interopRequireDefault(__webpack_require__(149));
+
+var _bvModalEvent = _interopRequireDefault(__webpack_require__(151));
+
+var _button = _interopRequireDefault(__webpack_require__(153));
+
+var _buttonClose = _interopRequireDefault(__webpack_require__(159));
+
+var _id = _interopRequireDefault(__webpack_require__(57));
+
+var _listenOnRoot = _interopRequireDefault(__webpack_require__(160));
+
+var _normalizeSlot = _interopRequireDefault(__webpack_require__(87));
+
+var _observeDom = _interopRequireDefault(__webpack_require__(161));
+
+var _keyCodes = _interopRequireDefault(__webpack_require__(162));
+
+var _env = __webpack_require__(68);
+
+var _inspect = __webpack_require__(43);
+
+var _config = __webpack_require__(70);
+
+var _html = __webpack_require__(163);
+
+var _dom = __webpack_require__(84);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// --- Constants ---
+var NAME = 'BModal'; // ObserveDom config to detect changes in modal content
+// so that we can adjust the modal padding if needed
+
+var OBSERVER_CONFIG = {
+  subtree: true,
+  childList: true,
+  characterData: true,
+  attributes: true,
+  attributeFilter: ['style', 'class'] // Options for DOM event listeners
+
+};
+var EVT_OPTIONS = {
+  passive: true,
+  capture: false
+};
+var props = {
+  title: {
+    type: String,
+    default: ''
+  },
+  titleHtml: {
+    type: String
+  },
+  titleTag: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'titleTag');
+    }
+  },
+  size: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'size');
+    }
+  },
+  centered: {
+    type: Boolean,
+    default: false
+  },
+  scrollable: {
+    type: Boolean,
+    default: false
+  },
+  buttonSize: {
+    type: String,
+    default: ''
+  },
+  noStacking: {
+    type: Boolean,
+    default: false
+  },
+  noFade: {
+    type: Boolean,
+    default: false
+  },
+  noCloseOnBackdrop: {
+    type: Boolean,
+    default: false
+  },
+  noCloseOnEsc: {
+    type: Boolean,
+    default: false
+  },
+  noEnforceFocus: {
+    type: Boolean,
+    default: false
+  },
+  headerBgVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'headerBgVariant');
+    }
+  },
+  headerBorderVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'headerBorderVariant');
+    }
+  },
+  headerTextVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'headerTextVariant');
+    }
+  },
+  headerCloseVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'headerCloseVariant');
+    }
+  },
+  headerClass: {
+    type: [String, Array],
+    default: null
+  },
+  bodyBgVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'bodyBgVariant');
+    }
+  },
+  bodyTextVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'bodyTextVariant');
+    }
+  },
+  modalClass: {
+    type: [String, Array],
+    default: null
+  },
+  dialogClass: {
+    type: [String, Array],
+    default: null
+  },
+  contentClass: {
+    type: [String, Array],
+    default: null
+  },
+  bodyClass: {
+    type: [String, Array],
+    default: null
+  },
+  footerBgVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'footerBgVariant');
+    }
+  },
+  footerBorderVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'footerBorderVariant');
+    }
+  },
+  footerTextVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'footerTextVariant');
+    }
+  },
+  footerClass: {
+    type: [String, Array],
+    default: null
+  },
+  hideHeader: {
+    type: Boolean,
+    default: false
+  },
+  hideFooter: {
+    type: Boolean,
+    default: false
+  },
+  hideHeaderClose: {
+    type: Boolean,
+    default: false
+  },
+  hideBackdrop: {
+    type: Boolean,
+    default: false
+  },
+  okOnly: {
+    type: Boolean,
+    default: false
+  },
+  okDisabled: {
+    type: Boolean,
+    default: false
+  },
+  cancelDisabled: {
+    type: Boolean,
+    default: false
+  },
+  visible: {
+    type: Boolean,
+    default: false
+  },
+  returnFocus: {
+    // type: Object,
+    default: null
+  },
+  headerCloseLabel: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'headerCloseLabel');
+    }
+  },
+  cancelTitle: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'cancelTitle');
+    }
+  },
+  cancelTitleHtml: {
+    type: String
+  },
+  okTitle: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'okTitle');
+    }
+  },
+  okTitleHtml: {
+    type: String
+  },
+  cancelVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'cancelVariant');
+    }
+  },
+  okVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'okVariant');
+    }
+  },
+  lazy: {
+    type: Boolean,
+    default: false
+  },
+  busy: {
+    type: Boolean,
+    default: false
+  },
+  static: {
+    type: Boolean,
+    default: false
+  } // @vue/component
+
+};
+exports.props = props;
+
+var _default2 = _vue.default.extend({
+  name: NAME,
+  mixins: [_id.default, _listenOnRoot.default, _normalizeSlot.default],
+  model: {
+    prop: 'visible',
+    event: 'change'
+  },
+  props: props,
+  data: function data() {
+    return {
+      is_hidden: true,
+      // If should not be in document
+      is_visible: false,
+      // Controls modal visible state
+      is_transitioning: false,
+      // Used for style control
+      is_show: false,
+      // Used for style control
+      is_block: false,
+      // Used for style control
+      is_opening: false,
+      // To signal that the modal is in the process of opening
+      is_closing: false,
+      // To signal that the modal is in the process of closing
+      ignoreBackdropClick: false,
+      // Used to signify if click out listener should ignore the click
+      isModalOverflowing: false,
+      return_focus: this.returnFocus || null,
+      // The following items are controlled by the modalManager instance
+      scrollbarWidth: 0,
+      zIndex: _modalManager.default.getBaseZIndex(),
+      isTop: true,
+      isBodyOverflowing: false
+    };
+  },
+  computed: {
+    modalClasses: function modalClasses() {
+      return [{
+        fade: !this.noFade,
+        show: this.is_show,
+        'd-block': this.is_block
+      }, this.modalClass];
+    },
+    modalStyles: function modalStyles() {
+      var sbWidth = "".concat(this.scrollbarWidth, "px");
+      return {
+        paddingLeft: !this.isBodyOverflowing && this.isModalOverflowing ? sbWidth : '',
+        paddingRight: this.isBodyOverflowing && !this.isModalOverflowing ? sbWidth : ''
+      };
+    },
+    dialogClasses: function dialogClasses() {
+      var _ref;
+
+      return [(_ref = {}, _defineProperty(_ref, "modal-".concat(this.size), Boolean(this.size)), _defineProperty(_ref, 'modal-dialog-centered', this.centered), _defineProperty(_ref, 'modal-dialog-scrollable', this.scrollable), _ref), this.dialogClass];
+    },
+    backdropClasses: function backdropClasses() {
+      return {
+        fade: !this.noFade,
+        show: this.is_show || this.noFade
+      };
+    },
+    headerClasses: function headerClasses() {
+      var _ref2;
+
+      return [(_ref2 = {}, _defineProperty(_ref2, "bg-".concat(this.headerBgVariant), Boolean(this.headerBgVariant)), _defineProperty(_ref2, "text-".concat(this.headerTextVariant), Boolean(this.headerTextVariant)), _defineProperty(_ref2, "border-".concat(this.headerBorderVariant), Boolean(this.headerBorderVariant)), _ref2), this.headerClass];
+    },
+    bodyClasses: function bodyClasses() {
+      var _ref3;
+
+      return [(_ref3 = {}, _defineProperty(_ref3, "bg-".concat(this.bodyBgVariant), Boolean(this.bodyBgVariant)), _defineProperty(_ref3, "text-".concat(this.bodyTextVariant), Boolean(this.bodyTextVariant)), _ref3), this.bodyClass];
+    },
+    footerClasses: function footerClasses() {
+      var _ref4;
+
+      return [(_ref4 = {}, _defineProperty(_ref4, "bg-".concat(this.footerBgVariant), Boolean(this.footerBgVariant)), _defineProperty(_ref4, "text-".concat(this.footerTextVariant), Boolean(this.footerTextVariant)), _defineProperty(_ref4, "border-".concat(this.footerBorderVariant), Boolean(this.footerBorderVariant)), _ref4), this.footerClass];
+    },
+    modalOuterStyle: function modalOuterStyle() {
+      // Styles needed for proper stacking of modals
+      return {
+        position: 'absolute',
+        zIndex: this.zIndex
+      };
+    },
+    slotScope: function slotScope() {
+      return {
+        ok: this.onOk,
+        cancel: this.onCancel,
+        close: this.onClose,
+        hide: this.hide,
+        visible: this.is_visible
+      };
+    }
+  },
+  watch: {
+    visible: function visible(newVal, oldVal) {
+      if (newVal !== oldVal) {
+        this[newVal ? 'show' : 'hide']();
+      }
+    }
+  },
+  created: function created() {
+    // Define non-reactive properties
+    this._observer = null;
+  },
+  mounted: function mounted() {
+    // Set initial z-index as queried from the DOM
+    this.zIndex = _modalManager.default.getBaseZIndex(); // Listen for events from others to either open or close ourselves
+    // and listen to all modals to enable/disable enforce focus
+
+    this.listenOnRoot('bv::show::modal', this.showHandler);
+    this.listenOnRoot('bv::hide::modal', this.hideHandler);
+    this.listenOnRoot('bv::toggle::modal', this.toggleHandler); // Listen for `bv:modal::show events`, and close ourselves if the
+    // opening modal not us
+
+    this.listenOnRoot('bv::modal::show', this.modalListener); // Initially show modal?
+
+    if (this.visible === true) {
+      this.show();
+    }
+  },
+  beforeDestroy: function beforeDestroy() {
+    // Ensure everything is back to normal
+    if (this._observer) {
+      this._observer.disconnect();
+
+      this._observer = null;
+    }
+
+    this.setEnforceFocus(false);
+    this.setResizeEvent(false);
+
+    if (this.is_visible) {
+      this.is_visible = false;
+      this.is_show = false;
+      this.is_transitioning = false;
+    }
+  },
+  methods: {
+    updateModel: function updateModel(val) {
+      if (val !== this.visible) {
+        this.$emit('change', val);
+      }
+    },
+    // Public Methods
+    show: function show() {
+      if (this.is_visible || this.is_opening) {
+        // If already open, on in the process of opening, do nothing
+
+        /* istanbul ignore next */
+        return;
+      }
+
+      if (this.is_closing) {
+        // If we are in the process of closing, wait until hidden before re-opening
+
+        /* istanbul ignore next: very difficult to test */
+        this.$once('hidden', this.show);
+        /* istanbul ignore next */
+
+        return;
+      }
+
+      this.is_opening = true; // Set the element to return focus to when closed
+
+      this.return_focus = this.return_focus || this.getActiveElement();
+      var showEvt = new _bvModalEvent.default('show', {
+        cancelable: true,
+        vueTarget: this,
+        target: this.$refs.modal,
+        relatedTarget: null,
+        componentId: this.safeId()
+      });
+      this.emitEvent(showEvt); // Don't show if canceled
+
+      if (showEvt.defaultPrevented || this.is_visible) {
+        this.is_opening = false; // Ensure the v-model reflects the current state
+
+        this.updateModel(false);
+        return;
+      } // Show the modal
+
+
+      this.doShow();
+    },
+    hide: function hide(trigger) {
+      if (!this.is_visible || this.is_closing) {
+        /* istanbul ignore next */
+        return;
+      }
+
+      this.is_closing = true;
+      var hideEvt = new _bvModalEvent.default('hide', {
+        cancelable: trigger !== 'FORCE',
+        vueTarget: this,
+        target: this.$refs.modal,
+        relatedTarget: null,
+        componentId: this.safeId(),
+        trigger: trigger || null
+      }); // We emit specific event for one of the three built-in buttons
+
+      if (trigger === 'ok') {
+        this.$emit('ok', hideEvt);
+      } else if (trigger === 'cancel') {
+        this.$emit('cancel', hideEvt);
+      } else if (trigger === 'headerclose') {
+        this.$emit('close', hideEvt);
+      }
+
+      this.emitEvent(hideEvt); // Hide if not canceled
+
+      if (hideEvt.defaultPrevented || !this.is_visible) {
+        this.is_closing = false; // Ensure v-model reflects current state
+
+        this.updateModel(true);
+        return;
+      } // Stop observing for content changes
+
+
+      if (this._observer) {
+        this._observer.disconnect();
+
+        this._observer = null;
+      } // Trigger the hide transition
+
+
+      this.is_visible = false; // Update the v-model
+
+      this.updateModel(false);
+    },
+    // Public method to toggle modal visibility
+    toggle: function toggle(triggerEl) {
+      if (triggerEl) {
+        this.return_focus = triggerEl;
+      }
+
+      if (this.is_visible) {
+        this.hide('toggle');
+      } else {
+        this.show();
+      }
+    },
+    // Private method to get the current document active element
+    getActiveElement: function getActiveElement() {
+      if (_env.isBrowser) {
+        var activeElement = document.activeElement; // Note: On IE11, `document.activeElement` may be null. So we test it for
+        // truthyness first.
+        // https://github.com/bootstrap-vue/bootstrap-vue/issues/3206
+        // Returning focus to document.body may cause unwanted scrolls, so we
+        // exclude setting focus on body
+
+        if (activeElement && activeElement !== document.body && activeElement.focus) {
+          // Preset the fallback return focus value if it is not set
+          // `document.activeElement` should be the trigger element that was clicked or
+          // in the case of using the v-model, which ever element has current focus
+          // Will be overridden by some commands such as toggle, etc.
+          return activeElement;
+        }
+      }
+
+      return null;
+    },
+    // Private method to finish showing modal
+    doShow: function doShow() {
+      var _this = this;
+
+      /* istanbul ignore next: commenting out for now until we can test stacking */
+      if (_modalManager.default.modalsAreOpen && this.noStacking) {
+        // If another modal(s) is already open, wait for it(them) to close
+        this.listenOnRootOnce('bv::modal::hidden', this.doShow);
+        return;
+      }
+
+      _modalManager.default.registerModal(this); // Place modal in DOM
+
+
+      this.is_hidden = false;
+      this.$nextTick(function () {
+        // We do this in `$nextTick()` to ensure the modal is in DOM first
+        // before we show it
+        _this.is_visible = true;
+        _this.is_opening = false; // Update the v-model
+
+        _this.updateModel(true); // Observe changes in modal content and adjust if necessary
+
+
+        _this._observer = (0, _observeDom.default)(_this.$refs.content, _this.checkModalOverflow.bind(_this), OBSERVER_CONFIG);
+      });
+    },
+    // Transition handlers
+    onBeforeEnter: function onBeforeEnter() {
+      this.is_transitioning = true;
+      this.setResizeEvent(true);
+    },
+    onEnter: function onEnter() {
+      this.is_block = true;
+    },
+    onAfterEnter: function onAfterEnter() {
+      var _this2 = this;
+
+      this.checkModalOverflow();
+      this.is_show = true;
+      this.is_transitioning = false;
+      this.$nextTick(function () {
+        var shownEvt = new _bvModalEvent.default('shown', {
+          cancelable: false,
+          vueTarget: _this2,
+          target: _this2.$refs.modal,
+          relatedTarget: null,
+          componentId: _this2.safeId()
+        });
+
+        _this2.emitEvent(shownEvt);
+
+        _this2.focusFirst();
+
+        _this2.setEnforceFocus(true);
+      });
+    },
+    onBeforeLeave: function onBeforeLeave() {
+      this.is_transitioning = true;
+      this.setResizeEvent(false);
+    },
+    onLeave: function onLeave() {
+      // Remove the 'show' class
+      this.is_show = false;
+    },
+    onAfterLeave: function onAfterLeave() {
+      var _this3 = this;
+
+      this.is_block = false;
+      this.is_transitioning = false;
+      this.setEnforceFocus(false);
+      this.isModalOverflowing = false;
+      this.is_hidden = true;
+      this.$nextTick(function () {
+        _this3.returnFocusTo();
+
+        _this3.is_closing = false;
+        _this3.return_focus = null; // TODO: Need to find a way to pass the `trigger` property
+        //       to the `hidden` event, not just only the `hide` event
+
+        var hiddenEvt = new _bvModalEvent.default('hidden', {
+          cancelable: false,
+          vueTarget: _this3,
+          target: _this3.$el,
+          relatedTarget: null,
+          componentId: _this3.safeId()
+        });
+
+        _this3.emitEvent(hiddenEvt);
+
+        _modalManager.default.unregisterModal(_this3);
+      });
+    },
+    // Event emitter
+    emitEvent: function emitEvent(bvModalEvt) {
+      var type = bvModalEvt.type; // We emit on root first incase a global listener wants to cancel
+      // the event first before the instance emits it's event
+
+      this.emitOnRoot("bv::modal::".concat(type), bvModalEvt, bvModalEvt.componentId);
+      this.$emit(type, bvModalEvt);
+    },
+    // UI event handlers
+    onDialogMousedown: function onDialogMousedown() {
+      var _this4 = this;
+
+      // Watch to see if the matching mouseup event occurs outside the dialog
+      // And if it does, cancel the clickOut handler
+      var modal = this.$refs.modal;
+
+      var onceModalMouseup = function onceModalMouseup(evt) {
+        (0, _dom.eventOff)(modal, 'mouseup', onceModalMouseup, EVT_OPTIONS);
+
+        if (evt.target === modal) {
+          _this4.ignoreBackdropClick = true;
+        }
+      };
+
+      (0, _dom.eventOn)(modal, 'mouseup', onceModalMouseup, EVT_OPTIONS);
+    },
+    onClickOut: function onClickOut(evt) {
+      // Do nothing if not visible, backdrop click disabled, or element
+      // that generated click event is no longer in document body
+      if (!this.is_visible || this.noCloseOnBackdrop || !(0, _dom.contains)(document.body, evt.target)) {
+        return;
+      }
+
+      if (this.ignoreBackdropClick) {
+        // Click was initiated inside the modal content, but finished outside
+        // Set by the above onDialogMousedown handler
+        this.ignoreBackdropClick = false;
+        return;
+      } // If backdrop clicked, hide modal
+
+
+      if (!(0, _dom.contains)(this.$refs.content, evt.target)) {
+        this.hide('backdrop');
+      }
+    },
+    onOk: function onOk() {
+      this.hide('ok');
+    },
+    onCancel: function onCancel() {
+      this.hide('cancel');
+    },
+    onClose: function onClose() {
+      this.hide('headerclose');
+    },
+    onEsc: function onEsc(evt) {
+      // If ESC pressed, hide modal
+      if (evt.keyCode === _keyCodes.default.ESC && this.is_visible && !this.noCloseOnEsc) {
+        this.hide('esc');
+      }
+    },
+    // Document focusin listener
+    focusHandler: function focusHandler(evt) {
+      // If focus leaves modal, bring it back
+      var modal = this.$refs.modal;
+
+      if (!this.noEnforceFocus && this.isTop && this.is_visible && modal && document !== evt.target && !(0, _dom.contains)(modal, evt.target)) {
+        modal.focus({
+          preventScroll: true
+        });
+      }
+    },
+    // Turn on/off focusin listener
+    setEnforceFocus: function setEnforceFocus(on) {
+      var method = on ? _dom.eventOn : _dom.eventOff;
+      method(document, 'focusin', this.focusHandler, EVT_OPTIONS);
+    },
+    // Resize listener
+    setResizeEvent: function setResizeEvent(on) {
+      var method = on ? _dom.eventOn : _dom.eventOff; // These events should probably also check if
+      // body is overflowing
+
+      method(window, 'resize', this.checkModalOverflow, EVT_OPTIONS);
+      method(window, 'orientationchange', this.checkModalOverflow, EVT_OPTIONS);
+    },
+    // Root listener handlers
+    showHandler: function showHandler(id, triggerEl) {
+      if (id === this.id) {
+        this.return_focus = triggerEl || this.getActiveElement();
+        this.show();
+      }
+    },
+    hideHandler: function hideHandler(id) {
+      if (id === this.id) {
+        this.hide('event');
+      }
+    },
+    toggleHandler: function toggleHandler(id, triggerEl) {
+      if (id === this.id) {
+        this.toggle(triggerEl);
+      }
+    },
+    modalListener: function modalListener(bvEvt) {
+      // If another modal opens, close this one if stacking not permitted
+      if (this.noStacking && bvEvt.vueTarget !== this) {
+        this.hide();
+      }
+    },
+    // Focus control handlers
+    focusFirst: function focusFirst() {
+      // TODO: Add support for finding input element with 'autofocus'
+      //       attribute set and focus that element
+      // Don't try and focus if we are SSR
+      if (_env.isBrowser) {
+        var modal = this.$refs.modal;
+        var activeElement = this.getActiveElement(); // If the modal contains the activeElement, we don't do anything
+
+        if (modal && !(activeElement && (0, _dom.contains)(modal, activeElement))) {
+          // Make sure top of modal is showing (if longer than the viewport)
+          // and focus the modal content wrapper
+          this.$nextTick(function () {
+            modal.scrollTop = 0;
+            modal.focus();
+          });
+        }
+      }
+    },
+    returnFocusTo: function returnFocusTo() {
+      // Prefer `returnFocus` prop over event specified
+      // `return_focus` value
+      var el = this.returnFocus || this.return_focus || null; // Is el a string CSS selector?
+
+      el = (0, _inspect.isString)(el) ? (0, _dom.select)(el) : el;
+
+      if (el) {
+        // Possibly could be a component reference
+        el = el.$el || el;
+
+        if ((0, _dom.isVisible)(el) && el.focus) {
+          el.focus();
+        }
+      }
+    },
+    checkModalOverflow: function checkModalOverflow() {
+      if (this.is_visible) {
+        var modal = this.$refs.modal;
+        this.isModalOverflowing = modal.scrollHeight > document.documentElement.clientHeight;
+      }
+    },
+    makeModal: function makeModal(h) {
+      var _this5 = this;
+
+      // Modal header
+      var header = h(false);
+
+      if (!this.hideHeader) {
+        var modalHeader = this.normalizeSlot('modal-header', this.slotScope);
+
+        if (!modalHeader) {
+          var closeButton = h(false);
+
+          if (!this.hideHeaderClose) {
+            closeButton = h(_buttonClose.default, {
+              props: {
+                disabled: this.is_transitioning,
+                ariaLabel: this.headerCloseLabel,
+                textVariant: this.headerCloseVariant || this.headerTextVariant
+              },
+              on: {
+                click: function click(evt) {
+                  _this5.onClose();
+                }
+              }
+            }, [this.normalizeSlot('modal-header-close', {})]);
+          }
+
+          modalHeader = [h(this.titleTag, {
+            class: ['modal-title']
+          }, [this.normalizeSlot('modal-title', this.slotScope) || this.titleHtml || (0, _html.stripTags)(this.title)]), closeButton];
+        }
+
+        header = h('header', {
+          ref: 'header',
+          staticClass: 'modal-header',
+          class: this.headerClasses,
+          attrs: {
+            id: this.safeId('__BV_modal_header_')
+          }
+        }, [modalHeader]);
+      } // Modal body
+
+
+      var body = h('div', {
+        ref: 'body',
+        staticClass: 'modal-body',
+        class: this.bodyClasses,
+        attrs: {
+          id: this.safeId('__BV_modal_body_')
+        }
+      }, this.normalizeSlot('default', this.slotScope)); // Modal footer
+
+      var footer = h(false);
+
+      if (!this.hideFooter) {
+        var modalFooter = this.normalizeSlot('modal-footer', this.slotScope);
+
+        if (!modalFooter) {
+          var cancelButton = h(false);
+
+          if (!this.okOnly) {
+            cancelButton = h(_button.default, {
+              props: {
+                variant: this.cancelVariant,
+                size: this.buttonSize,
+                disabled: this.cancelDisabled || this.busy || this.is_transitioning
+              },
+              on: {
+                click: function click(evt) {
+                  _this5.onCancel();
+                }
+              }
+            }, [this.normalizeSlot('modal-cancel', {}) || this.cancelTitleHtml || (0, _html.stripTags)(this.cancelTitle)]);
+          }
+
+          var okButton = h(_button.default, {
+            props: {
+              variant: this.okVariant,
+              size: this.buttonSize,
+              disabled: this.okDisabled || this.busy || this.is_transitioning
+            },
+            on: {
+              click: function click(evt) {
+                _this5.onOk();
+              }
+            }
+          }, [this.normalizeSlot('modal-ok', {}) || this.okTitleHtml || (0, _html.stripTags)(this.okTitle)]);
+          modalFooter = [cancelButton, okButton];
+        }
+
+        footer = h('footer', {
+          ref: 'footer',
+          staticClass: 'modal-footer',
+          class: this.footerClasses,
+          attrs: {
+            id: this.safeId('__BV_modal_footer_')
+          }
+        }, [modalFooter]);
+      } // Assemble modal content
+
+
+      var modalContent = h('div', {
+        ref: 'content',
+        staticClass: 'modal-content',
+        class: this.contentClass,
+        attrs: {
+          role: 'document',
+          id: this.safeId('__BV_modal_content_'),
+          'aria-labelledby': this.hideHeader ? null : this.safeId('__BV_modal_header_'),
+          'aria-describedby': this.safeId('__BV_modal_body_')
+        }
+      }, [header, body, footer]); // Modal dialog wrapper
+
+      var modalDialog = h('div', {
+        staticClass: 'modal-dialog',
+        class: this.dialogClasses,
+        on: {
+          mousedown: this.onDialogMousedown
+        }
+      }, [modalContent]); // Modal
+
+      var modal = h('div', {
+        ref: 'modal',
+        staticClass: 'modal',
+        class: this.modalClasses,
+        style: this.modalStyles,
+        directives: [{
+          name: 'show',
+          rawName: 'v-show',
+          value: this.is_visible,
+          expression: 'is_visible'
+        }],
+        attrs: {
+          id: this.safeId(),
+          role: 'dialog',
+          tabindex: '-1',
+          'aria-hidden': this.is_visible ? null : 'true',
+          'aria-modal': this.is_visible ? 'true' : null
+        },
+        on: {
+          keydown: this.onEsc,
+          click: this.onClickOut
+        }
+      }, [modalDialog]); // Wrap modal in transition
+
+      modal = h('transition', {
+        props: {
+          enterClass: '',
+          enterToClass: '',
+          enterActiveClass: '',
+          leaveClass: '',
+          leaveActiveClass: '',
+          leaveToClass: ''
+        },
+        on: {
+          'before-enter': this.onBeforeEnter,
+          enter: this.onEnter,
+          'after-enter': this.onAfterEnter,
+          'before-leave': this.onBeforeLeave,
+          leave: this.onLeave,
+          'after-leave': this.onAfterLeave
+        }
+      }, [modal]); // Modal backdrop
+
+      var backdrop = h(false);
+
+      if (!this.hideBackdrop && (this.is_visible || this.is_transitioning || this.is_block)) {
+        backdrop = h('div', {
+          staticClass: 'modal-backdrop',
+          class: this.backdropClasses,
+          attrs: {
+            id: this.safeId('__BV_modal_backdrop_')
+          }
+        }, [this.normalizeSlot('modal-backdrop', {})]);
+      } // Tab trap to prevent page from scrolling to next element in
+      // tab index during enforce focus tab cycle
+
+
+      var tabTrap = h(false);
+
+      if (this.is_visible && this.isTop && !this.noEnforceFocus) {
+        tabTrap = h('div', {
+          attrs: {
+            tabindex: '0'
+          }
+        });
+      } // Assemble modal and backdrop in an outer <div>
+
+
+      return h('div', {
+        key: "modal-outer-".concat(this._uid),
+        style: this.modalOuterStyle,
+        attrs: {
+          id: this.safeId('__BV_modal_outer_')
+        }
+      }, [modal, tabTrap, backdrop]);
+    }
+  },
+  render: function render(h) {
+    // Wrap in a portal
+    return h(_portalVue.Portal, {
+      props: {
+        name: "b-modal-".concat(this._uid),
+        to: _modalManager.default.modalTargetName,
+        slim: true,
+        disabled: this.static
+      }
+    }, [!this.is_hidden || this.static && !this.lazy ? this.makeModal(h) : h(false)]);
+  }
+});
+
+exports.default = _default2;
+
+/***/ }),
+/* 149 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _vue = _interopRequireDefault(__webpack_require__(44));
+
+var _portalVue = __webpack_require__(147);
+
+var _dom = __webpack_require__(84);
+
+var _env = __webpack_require__(68);
+
+var _inspect = __webpack_require__(43);
+
+var _modalTarget = _interopRequireWildcard(__webpack_require__(150));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Private ModalManager helper
+ * Handles controlling modal stacking zIndexes and body adjustments/classes
+ */
+// --- Constants ---
+// Default modal backdrop z-index
+var DEFAULT_ZINDEX = 1040; // Selectors for padding/margin adjustments
+
+var Selector = {
+  FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
+  STICKY_CONTENT: '.sticky-top',
+  NAVBAR_TOGGLER: '.navbar-toggler' // @vue/component
+
+};
+
+var ModalManager = _vue.default.extend({
+  data: function data() {
+    return {
+      modals: [],
+      baseZIndex: null,
+      scrollbarWidth: null,
+      isBodyOverflowing: false
+    };
+  },
+  computed: {
+    modalCount: function modalCount() {
+      return this.modals.length;
+    },
+    modalsAreOpen: function modalsAreOpen() {
+      return this.modalCount > 0;
+    },
+    modalTargetName: function modalTargetName() {
+      return _modalTarget.modalTargetName;
+    }
+  },
+  watch: {
+    modalCount: function modalCount(newCount, oldCount) {
+      if (_env.isBrowser) {
+        this.getScrollbarWidth();
+
+        if (newCount > 0 && oldCount === 0) {
+          // Transitioning to modal(s) open
+          this.checkScrollbar();
+          this.setScrollbar();
+          (0, _dom.addClass)(document.body, 'modal-open');
+        } else if (newCount === 0 && oldCount > 0) {
+          // Transitioning to modal(s) closed
+          this.resetScrollbar();
+          (0, _dom.removeClass)(document.body, 'modal-open');
+        }
+
+        (0, _dom.setAttr)(document.body, 'data-modal-open-count', String(newCount));
+      }
+    },
+    modals: function modals(newVal, oldVal) {
+      var _this = this;
+
+      this.checkScrollbar();
+      (0, _dom.requestAF)(function () {
+        _this.updateModals(newVal || []);
+      });
+    }
+  },
+  methods: {
+    // Public methods
+    registerModal: function registerModal(modal) {
+      var _this2 = this;
+
+      // Make sure the modal target exists
+      if (!modal.static) {
+        this.ensureTarget(modal);
+      } // Register the modal if not already registered
+
+
+      if (modal && this.modals.indexOf(modal) === -1) {
+        // Add modal to modals array
+        this.modals.push(modal);
+        modal.$once('hook:beforeDestroy', function () {
+          _this2.unregisterModal(modal);
+        });
+      }
+    },
+    unregisterModal: function unregisterModal(modal) {
+      var index = this.modals.indexOf(modal);
+
+      if (index > -1) {
+        // Remove modal from modals array
+        this.modals.splice(index, 1); // Reset the modal's data
+
+        if (!(modal._isBeingDestroyed || modal._isDestroyed)) {
+          this.resetModal(modal);
+        }
+      }
+    },
+    getBaseZIndex: function getBaseZIndex() {
+      if ((0, _inspect.isNull)(this.baseZIndex) && _env.isBrowser) {
+        // Create a temporary `div.modal-backdrop` to get computed z-index
+        var div = document.createElement('div');
+        div.className = 'modal-backdrop d-none';
+        div.style.display = 'none';
+        document.body.appendChild(div);
+        this.baseZIndex = parseInt((0, _dom.getCS)(div).zIndex || DEFAULT_ZINDEX, 10);
+        document.body.removeChild(div);
+      }
+
+      return this.baseZIndex || DEFAULT_ZINDEX;
+    },
+    getScrollbarWidth: function getScrollbarWidth() {
+      if ((0, _inspect.isNull)(this.scrollbarWidth) && _env.isBrowser) {
+        // Create a temporary `div.measure-scrollbar` to get computed z-index
+        var div = document.createElement('div');
+        div.className = 'modal-scrollbar-measure';
+        document.body.appendChild(div);
+        this.scrollbarWidth = (0, _dom.getBCR)(div).width - div.clientWidth;
+        document.body.removeChild(div);
+      }
+
+      return this.scrollbarWidth || 0;
+    },
+    // Private methods
+    ensureTarget: function ensureTarget(modal) {
+      var _this3 = this;
+
+      if (_env.isBrowser && !_portalVue.Wormhole.hasTarget(this.modalTargetName)) {
+        var div = document.createElement('div');
+        document.body.appendChild(div);
+        var target = new _modalTarget.default({
+          // Set parent/root to the modal's $root
+          parent: modal.$root
+        });
+        target.$mount(div);
+        target.$once('hook:beforeDestroy', function () {
+          _this3.modals.forEach(function (modal) {
+            // Hide any modals that may be in the target, if
+            // target is destroyed, using the 'FORCE' trigger
+            // which makes the hide event non-cancelable
+            if (!modal.static) {
+              modal.hide('FORCED');
+            }
+          });
+        });
+      }
+    },
+    updateModals: function updateModals(modals) {
+      var _this4 = this;
+
+      var baseZIndex = this.getBaseZIndex();
+      var scrollbarWidth = this.getScrollbarWidth();
+      modals.forEach(function (modal, index) {
+        // We update data values on each modal
+        modal.zIndex = baseZIndex + index;
+        modal.scrollbarWidth = scrollbarWidth;
+        modal.isTop = index === _this4.modals.length - 1;
+        modal.isBodyOverflowing = _this4.isBodyOverflowing;
+      });
+    },
+    resetModal: function resetModal(modal) {
+      if (modal) {
+        modal.zIndex = this.getBaseZIndex();
+        modal.isTop = true;
+        modal.isBodyOverflowing = false;
+      }
+    },
+    checkScrollbar: function checkScrollbar() {
+      // Determine if the body element is overflowing
+      var _getBCR = (0, _dom.getBCR)(document.body),
+          left = _getBCR.left,
+          right = _getBCR.right;
+
+      this.isBodyOverflowing = left + right < window.innerWidth;
+    },
+    setScrollbar: function setScrollbar() {
+      var body = document.body; // Storage place to cache changes to margins and padding
+      // Note: This assumes the following element types are not added to the
+      // document after the modal has opened.
+
+      body._paddingChangedForModal = body._paddingChangedForModal || [];
+      body._marginChangedForModal = body._marginChangedForModal || [];
+
+      if (this.isBodyOverflowing) {
+        var scrollbarWidth = this.scrollbarWidth; // Adjust fixed content padding
+
+        /* istanbul ignore next: difficult to test in JSDOM */
+
+        (0, _dom.selectAll)(Selector.FIXED_CONTENT).forEach(function (el) {
+          var actualPadding = el.style.paddingRight;
+          var calculatedPadding = (0, _dom.getCS)(el).paddingRight || 0;
+          (0, _dom.setAttr)(el, 'data-padding-right', actualPadding);
+          el.style.paddingRight = "".concat(parseFloat(calculatedPadding) + scrollbarWidth, "px");
+
+          body._paddingChangedForModal.push(el);
+        }); // Adjust sticky content margin
+
+        /* istanbul ignore next: difficult to test in JSDOM */
+
+        (0, _dom.selectAll)(Selector.STICKY_CONTENT).forEach(function (el) {
+          var actualMargin = el.style.marginRight;
+          var calculatedMargin = (0, _dom.getCS)(el).marginRight || 0;
+          (0, _dom.setAttr)(el, 'data-margin-right', actualMargin);
+          el.style.marginRight = "".concat(parseFloat(calculatedMargin) - scrollbarWidth, "px");
+
+          body._marginChangedForModal.push(el);
+        }); // Adjust <b-navbar-toggler> margin
+
+        /* istanbul ignore next: difficult to test in JSDOM */
+
+        (0, _dom.selectAll)(Selector.NAVBAR_TOGGLER).forEach(function (el) {
+          var actualMargin = el.style.marginRight;
+          var calculatedMargin = (0, _dom.getCS)(el).marginRight || 0;
+          (0, _dom.setAttr)(el, 'data-margin-right', actualMargin);
+          el.style.marginRight = "".concat(parseFloat(calculatedMargin) + scrollbarWidth, "px");
+
+          body._marginChangedForModal.push(el);
+        }); // Adjust body padding
+
+        var actualPadding = body.style.paddingRight;
+        var calculatedPadding = (0, _dom.getCS)(body).paddingRight;
+        (0, _dom.setAttr)(body, 'data-padding-right', actualPadding);
+        body.style.paddingRight = "".concat(parseFloat(calculatedPadding) + scrollbarWidth, "px");
+      }
+    },
+    resetScrollbar: function resetScrollbar() {
+      var body = document.body;
+
+      if (body._paddingChangedForModal) {
+        // Restore fixed content padding
+        body._paddingChangedForModal.forEach(function (el) {
+          /* istanbul ignore next: difficult to test in JSDOM */
+          if ((0, _dom.hasAttr)(el, 'data-padding-right')) {
+            el.style.paddingRight = (0, _dom.getAttr)(el, 'data-padding-right') || '';
+            (0, _dom.removeAttr)(el, 'data-padding-right');
+          }
+        });
+      }
+
+      if (body._marginChangedForModal) {
+        // Restore sticky content and navbar-toggler margin
+        body._marginChangedForModal.forEach(function (el) {
+          /* istanbul ignore next: difficult to test in JSDOM */
+          if ((0, _dom.hasAttr)(el, 'data-margin-right')) {
+            el.style.marginRight = (0, _dom.getAttr)(el, 'data-margin-right') || '';
+            (0, _dom.removeAttr)(el, 'data-margin-right');
+          }
+        });
+      }
+
+      body._paddingChangedForModal = null;
+      body._marginChangedForModal = null; // Restore body padding
+
+      if ((0, _dom.hasAttr)(body, 'data-padding-right')) {
+        body.style.paddingRight = (0, _dom.getAttr)(body, 'data-padding-right') || '';
+        (0, _dom.removeAttr)(body, 'data-padding-right');
+      }
+    }
+  }
+}); // Export our ModalManager
+
+
+var _default = new ModalManager();
+
+exports.default = _default;
+
+/***/ }),
+/* 150 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = exports.modalTargetName = void 0;
+
+var _vue = _interopRequireDefault(__webpack_require__(44));
+
+var _portalVue = __webpack_require__(147);
+
+var _dom = __webpack_require__(84);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var NAME = 'BModalTarget';
+var modalTargetName = "BV-".concat(NAME); // Pivate internal component used by ModalManager.
+// Not to be used directly by humans.
+// @vue/component
+
+exports.modalTargetName = modalTargetName;
+
+var _default = _vue.default.extend({
+  name: NAME,
+  data: function data() {
+    return {
+      doRender: false
+    };
+  },
+  destroyed: function destroyed()
+  /* istanbul ignore next */
+  {
+    // Ensure we get removed from DOM when destroyed
+    if (this.$el && this.$el.parentNode) {
+      this.$el.parentNode.removeChild(this.$el);
+    }
+  },
+  beforeMount: function beforeMount() {
+    var self = this; // There can be only one modal target in the document
+
+    /* istanbul ignore if */
+
+    if (_portalVue.Wormhole.hasTarget(modalTargetName)) {
+      this.$once('hook:mounted', function () {
+        self.$nextTick(function () {
+          (0, _dom.requestAF)(function () {
+            self.$destroy();
+          });
+        });
+      });
+    } else {
+      this.doRender = true;
+    }
+  },
+  render: function render(h) {
+    /* istanbul ignore else */
+    if (this.doRender) {
+      return h(_portalVue.PortalTarget, {
+        staticClass: 'b-modal-target',
+        props: {
+          tag: 'div',
+          name: modalTargetName,
+          multiple: true,
+          transition: null,
+          slim: false
+        }
+      });
+    } else {
+      return h('div');
+    }
+  }
+});
+
+exports.default = _default;
+
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = exports.BvModalEvent = void 0;
+
+var _bvEvent = _interopRequireDefault(__webpack_require__(152));
+
+var _warn = _interopRequireDefault(__webpack_require__(86));
+
+var _object = __webpack_require__(47);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
+
+function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var BvModalEvent =
+/*#__PURE__*/
+function (_BvEvent) {
+  _inherits(BvModalEvent, _BvEvent);
+
+  function BvModalEvent(type) {
+    var _this;
+
+    var eventInit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    _classCallCheck(this, BvModalEvent);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(BvModalEvent).call(this, type, eventInit)); // Freeze our new props as readonly, but leave them enumerable
+
+    (0, _object.defineProperties)(_assertThisInitialized(_this), {
+      trigger: (0, _object.readonlyDescriptor)()
+    });
+    return _this;
+  }
+
+  _createClass(BvModalEvent, [{
+    key: "cancel",
+    value: function cancel()
+    /* istanbul ignore next */
+    {
+      // Backwards compatibility for BootstrapVue 1.x
+      (0, _warn.default)('b-modal: evt.cancel() is deprecated. Please use evt.preventDefault().');
+      this.preventDefault();
+    }
+  }, {
+    key: "modalId",
+    get: function get()
+    /* istanbul ignore next */
+    {
+      // Backwards compatability <= 2.0.0-rc.19
+      (0, _warn.default)('b-modal: evt.modalId is deprecated. Please use evt.componentId.');
+      return this.componentId;
+    }
+  }], [{
+    key: "Defaults",
+    get: function get() {
+      return _objectSpread({}, _get(_getPrototypeOf(BvModalEvent), "Defaults", this), {
+        trigger: null
+      });
+    }
+  }]);
+
+  return BvModalEvent;
+}(_bvEvent.default); // Named exports
+
+
+exports.BvModalEvent = BvModalEvent;
+// Default export
+var _default = BvModalEvent;
+exports.default = _default;
+
+/***/ }),
+/* 152 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = exports.BvEvent = void 0;
+
+var _object = __webpack_require__(47);
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var BvEvent =
+/*#__PURE__*/
+function () {
+  function BvEvent(type) {
+    var eventInit = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    _classCallCheck(this, BvEvent);
+
+    // Start by emulating native Event constructor.
+    if (!type) {
+      /* istanbul ignore next */
+      throw new TypeError("Failed to construct '".concat(this.constructor.name, "'. 1 argument required, ").concat(arguments.length, " given."));
+    } // Assign defaults first, the eventInit,
+    // and the type last so it can't be overwritten.
+
+
+    (0, _object.assign)(this, BvEvent.Defaults, this.constructor.Defaults, eventInit, {
+      type: type
+    }); // Freeze some props as readonly, but leave them enumerable.
+
+    (0, _object.defineProperties)(this, {
+      type: (0, _object.readonlyDescriptor)(),
+      cancelable: (0, _object.readonlyDescriptor)(),
+      nativeEvent: (0, _object.readonlyDescriptor)(),
+      target: (0, _object.readonlyDescriptor)(),
+      relatedTarget: (0, _object.readonlyDescriptor)(),
+      vueTarget: (0, _object.readonlyDescriptor)(),
+      componentId: (0, _object.readonlyDescriptor)()
+    }); // Create a private variable using closure scoping.
+
+    var defaultPrevented = false; // Recreate preventDefault method. One way setter.
+
+    this.preventDefault = function preventDefault() {
+      if (this.cancelable) {
+        defaultPrevented = true;
+      }
+    }; // Create 'defaultPrevented' publicly accessible prop
+    // that can only be altered by the preventDefault method.
+
+
+    (0, _object.defineProperty)(this, 'defaultPrevented', {
+      enumerable: true,
+      get: function get() {
+        return defaultPrevented;
+      }
+    });
+  }
+
+  _createClass(BvEvent, null, [{
+    key: "Defaults",
+    get: function get() {
+      return {
+        type: '',
+        cancelable: true,
+        nativeEvent: null,
+        target: null,
+        relatedTarget: null,
+        vueTarget: null,
+        componentId: null
+      };
+    }
+  }]);
+
+  return BvEvent;
+}(); // Named Exports
+
+
+exports.BvEvent = BvEvent;
+// Default Export
+var _default = BvEvent;
+exports.default = _default;
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = exports.props = void 0;
+
+var _vue = _interopRequireDefault(__webpack_require__(44));
+
+var _vueFunctionalDataMerge = __webpack_require__(48);
+
+var _pluckProps = _interopRequireDefault(__webpack_require__(154));
+
+var _array = __webpack_require__(49);
+
+var _config = __webpack_require__(70);
+
+var _dom = __webpack_require__(84);
+
+var _inspect = __webpack_require__(43);
+
+var _object = __webpack_require__(47);
+
+var _link = _interopRequireWildcard(__webpack_require__(156));
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+// --- Constants --
+var NAME = 'BButton';
+var btnProps = {
+  block: {
+    type: Boolean,
+    default: false
+  },
+  disabled: {
+    type: Boolean,
+    default: false
+  },
+  size: {
+    type: String,
+    default: null
+  },
+  variant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'variant');
+    }
+  },
+  type: {
+    type: String,
+    default: 'button'
+  },
+  tag: {
+    type: String,
+    default: 'button'
+  },
+  pill: {
+    type: Boolean,
+    default: false
+  },
+  pressed: {
+    // tri-state prop: true, false or null
+    // => on, off, not a toggle
+    type: Boolean,
+    default: null
+  }
+};
+var linkProps = (0, _link.propsFactory)();
+delete linkProps.href.default;
+delete linkProps.to.default;
+var linkPropKeys = (0, _object.keys)(linkProps);
+
+var props = _objectSpread({}, linkProps, btnProps); // --- Helper methods ---
+// Focus handler for toggle buttons.  Needs class of 'focus' when focused.
+
+
+exports.props = props;
+
+var handleFocus = function handleFocus(evt) {
+  if (evt.type === 'focusin') {
+    (0, _dom.addClass)(evt.target, 'focus');
+  } else if (evt.type === 'focusout') {
+    (0, _dom.removeClass)(evt.target, 'focus');
+  }
+}; // Is the requested button a link?
+
+
+var isLink = function isLink(props) {
+  // If tag prop is set to `a`, we use a b-link to get proper disabled handling
+  return Boolean(props.href || props.to || props.tag && String(props.tag).toLowerCase() === 'a');
+}; // Is the button to be a toggle button?
+
+
+var isToggle = function isToggle(props) {
+  return (0, _inspect.isBoolean)(props.pressed);
+}; // Is the button "really" a button?
+
+
+var isButton = function isButton(props) {
+  if (isLink(props)) {
+    return false;
+  } else if (props.tag && String(props.tag).toLowerCase() !== 'button') {
+    return false;
+  }
+
+  return true;
+}; // Is the requested tag not a button or link?
+
+
+var isNonStandardTag = function isNonStandardTag(props) {
+  return !isLink(props) && !isButton(props);
+}; // Compute required classes (non static classes)
+
+
+var computeClass = function computeClass(props) {
+  var _ref;
+
+  return ["btn-".concat(props.variant || (0, _config.getComponentConfig)(NAME, 'variant')), (_ref = {}, _defineProperty(_ref, "btn-".concat(props.size), Boolean(props.size)), _defineProperty(_ref, 'btn-block', props.block), _defineProperty(_ref, 'rounded-pill', props.pill), _defineProperty(_ref, "disabled", props.disabled), _defineProperty(_ref, "active", props.pressed), _ref)];
+}; // Compute the link props to pass to b-link (if required)
+
+
+var computeLinkProps = function computeLinkProps(props) {
+  return isLink(props) ? (0, _pluckProps.default)(linkPropKeys, props) : null;
+}; // Compute the attributes for a button
+
+
+var computeAttrs = function computeAttrs(props, data) {
+  var button = isButton(props);
+  var link = isLink(props);
+  var toggle = isToggle(props);
+  var nonStdTag = isNonStandardTag(props);
+  var role = data.attrs && data.attrs['role'] ? data.attrs['role'] : null;
+  var tabindex = data.attrs ? data.attrs['tabindex'] : null;
+
+  if (nonStdTag) {
+    tabindex = '0';
+  }
+
+  return {
+    // Type only used for "real" buttons
+    type: button && !link ? props.type : null,
+    // Disabled only set on "real" buttons
+    disabled: button ? props.disabled : null,
+    // We add a role of button when the tag is not a link or button for ARIA.
+    // Don't bork any role provided in data.attrs when isLink or isButton
+    role: nonStdTag ? 'button' : role,
+    // We set the aria-disabled state for non-standard tags
+    'aria-disabled': nonStdTag ? String(props.disabled) : null,
+    // For toggles, we need to set the pressed state for ARIA
+    'aria-pressed': toggle ? String(props.pressed) : null,
+    // autocomplete off is needed in toggle mode to prevent some browsers from
+    // remembering the previous setting when using the back button.
+    autocomplete: toggle ? 'off' : null,
+    // Tab index is used when the component is not a button.
+    // Links are tabbable, but don't allow disabled, while non buttons or links
+    // are not tabbable, so we mimic that functionality by disabling tabbing
+    // when disabled, and adding a tabindex of '0' to non buttons or non links.
+    tabindex: props.disabled && !button ? '-1' : tabindex
+  };
+}; // @vue/component
+
+
+var _default2 = _vue.default.extend({
+  name: NAME,
+  functional: true,
+  props: props,
+  render: function render(h, _ref2) {
+    var props = _ref2.props,
+        data = _ref2.data,
+        listeners = _ref2.listeners,
+        children = _ref2.children;
+    var toggle = isToggle(props);
+    var link = isLink(props);
+    var on = {
+      click: function click(e) {
+        /* istanbul ignore if: blink/button disabled should handle this */
+        if (props.disabled && e instanceof Event) {
+          e.stopPropagation();
+          e.preventDefault();
+        } else if (toggle && listeners && listeners['update:pressed']) {
+          // Send .sync updates to any "pressed" prop (if .sync listeners)
+          // Concat will normalize the value to an array
+          // without double wrapping an array value in an array.
+          (0, _array.concat)(listeners['update:pressed']).forEach(function (fn) {
+            if ((0, _inspect.isFunction)(fn)) {
+              fn(!props.pressed);
+            }
+          });
+        }
+      }
+    };
+
+    if (toggle) {
+      on.focusin = handleFocus;
+      on.focusout = handleFocus;
+    }
+
+    var componentData = {
+      staticClass: 'btn',
+      class: computeClass(props),
+      props: computeLinkProps(props),
+      attrs: computeAttrs(props, data),
+      on: on
+    };
+    return h(link ? _link.default : props.tag, (0, _vueFunctionalDataMerge.mergeData)(data, componentData), children);
+  }
+});
+
+exports.default = _default2;
+
+/***/ }),
+/* 154 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _identity = _interopRequireDefault(__webpack_require__(155));
+
+var _inspect = __webpack_require__(43);
+
+var _object = __webpack_require__(47);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Given an array of properties or an object of property keys,
+ * plucks all the values off the target object, returning a new object
+ * that has props that reference the original prop values
+ *
+ * @param {{}|string[]} keysToPluck
+ * @param {{}} objToPluck
+ * @param {Function} transformFn
+ * @return {{}}
+ */
+var pluckProps = function pluckProps(keysToPluck, objToPluck) {
+  var transformFn = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _identity.default;
+  return ((0, _inspect.isArray)(keysToPluck) ? keysToPluck.slice() : (0, _object.keys)(keysToPluck)).reduce(function (memo, prop) {
+    memo[transformFn(prop)] = objToPluck[prop];
+    return memo;
+  }, {});
+};
+
+var _default = pluckProps;
+exports.default = _default;
+
+/***/ }),
+/* 155 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var identity = function identity(x) {
+  return x;
+};
+
+var _default = identity;
+exports.default = _default;
+
+/***/ }),
+/* 156 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = exports.omitLinkProps = exports.pickLinkProps = exports.props = exports.propsFactory = void 0;
+
+var _vue = _interopRequireDefault(__webpack_require__(44));
+
+var _vueFunctionalDataMerge = __webpack_require__(48);
+
+var _array = __webpack_require__(49);
+
+var _inspect = __webpack_require__(43);
+
+var _object = __webpack_require__(47);
+
+var _router = __webpack_require__(157);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+/**
+ * The Link component is used in many other BV components.
+ * As such, sharing its props makes supporting all its features easier.
+ * However, some components need to modify the defaults for their own purpose.
+ * Prefer sharing a fresh copy of the props to ensure mutations
+ * do not affect other component references to the props.
+ *
+ * https://github.com/vuejs/vue-router/blob/dev/src/components/link.js
+ * @return {{}}
+ */
+var propsFactory = function propsFactory() {
+  return {
+    href: {
+      type: String,
+      default: null
+    },
+    rel: {
+      type: String,
+      default: null
+    },
+    target: {
+      type: String,
+      default: '_self'
+    },
+    active: {
+      type: Boolean,
+      default: false
+    },
+    disabled: {
+      type: Boolean,
+      default: false
+    },
+    // router-link specific props
+    to: {
+      type: [String, Object],
+      default: null
+    },
+    append: {
+      type: Boolean,
+      default: false
+    },
+    replace: {
+      type: Boolean,
+      default: false
+    },
+    event: {
+      type: [String, Array],
+      default: 'click'
+    },
+    activeClass: {
+      type: String // default: undefined
+
+    },
+    exact: {
+      type: Boolean,
+      default: false
+    },
+    exactActiveClass: {
+      type: String // default: undefined
+
+    },
+    routerTag: {
+      type: String,
+      default: 'a'
+    },
+    // nuxt-link specific prop(s)
+    noPrefetch: {
+      type: Boolean,
+      default: false
+    }
+  };
+};
+
+exports.propsFactory = propsFactory;
+var props = propsFactory(); // Return a fresh copy of <b-link> props
+// Containing only the specified prop(s)
+
+exports.props = props;
+
+var pickLinkProps = function pickLinkProps(propsToPick) {
+  var freshLinkProps = propsFactory(); // Normalize everything to array.
+
+  propsToPick = (0, _array.concat)(propsToPick);
+  return (0, _object.keys)(freshLinkProps).reduce(function (memo, prop) {
+    if ((0, _array.arrayIncludes)(propsToPick, prop)) {
+      memo[prop] = freshLinkProps[prop];
+    }
+
+    return memo;
+  }, {});
+}; // Return a fresh copy of <b-link> props
+// Keeping all but the specified omitting prop(s)
+
+
+exports.pickLinkProps = pickLinkProps;
+
+var omitLinkProps = function omitLinkProps(propsToOmit) {
+  var freshLinkProps = propsFactory(); // Normalize everything to array.
+
+  propsToOmit = (0, _array.concat)(propsToOmit);
+  return (0, _object.keys)(props).reduce(function (memo, prop) {
+    if (!(0, _array.arrayIncludes)(propsToOmit, prop)) {
+      memo[prop] = freshLinkProps[prop];
+    }
+
+    return memo;
+  }, {});
+};
+
+exports.omitLinkProps = omitLinkProps;
+
+var clickHandlerFactory = function clickHandlerFactory(_ref) {
+  var disabled = _ref.disabled,
+      tag = _ref.tag,
+      href = _ref.href,
+      suppliedHandler = _ref.suppliedHandler,
+      parent = _ref.parent;
+  return function onClick(evt) {
+    var _arguments = arguments;
+
+    if (disabled && evt instanceof Event) {
+      // Stop event from bubbling up.
+      evt.stopPropagation(); // Kill the event loop attached to this specific EventTarget.
+      // Needed to prevent vue-router for doing its thing
+
+      evt.stopImmediatePropagation();
+    } else {
+      if ((0, _router.isRouterLink)(tag) && evt.target.__vue__) {
+        // Router links do not emit instance 'click' events, so we
+        // add in an $emit('click', evt) on it's vue instance
+
+        /* istanbul ignore next: difficult to test, but we know it works */
+        evt.target.__vue__.$emit('click', evt);
+      } // Call the suppliedHandler(s), if any provided
+
+
+      (0, _array.concat)(suppliedHandler).filter(function (h) {
+        return (0, _inspect.isFunction)(h);
+      }).forEach(function (handler) {
+        handler.apply(void 0, _toConsumableArray(_arguments));
+      });
+      parent.$root.$emit('clicked::link', evt);
+    }
+
+    if (!(0, _router.isRouterLink)(tag) && href === '#' || disabled) {
+      // Stop scroll-to-top behavior or navigation on regular links
+      // when href is just '#'
+      evt.preventDefault();
+    }
+  };
+}; // @vue/component
+
+
+var _default = _vue.default.extend({
+  name: 'BLink',
+  functional: true,
+  props: propsFactory(),
+  render: function render(h, _ref2) {
+    var props = _ref2.props,
+        data = _ref2.data,
+        parent = _ref2.parent,
+        children = _ref2.children;
+    var tag = (0, _router.computeTag)(props, parent);
+    var rel = (0, _router.computeRel)(props);
+    var href = (0, _router.computeHref)(props, tag);
+    var eventType = (0, _router.isRouterLink)(tag) ? 'nativeOn' : 'on';
+    var suppliedHandler = (data[eventType] || {}).click;
+    var handlers = {
+      click: clickHandlerFactory({
+        tag: tag,
+        href: href,
+        disabled: props.disabled,
+        suppliedHandler: suppliedHandler,
+        parent: parent
+      })
+    };
+    var componentData = (0, _vueFunctionalDataMerge.mergeData)(data, {
+      class: {
+        active: props.active,
+        disabled: props.disabled
+      },
+      attrs: {
+        rel: rel,
+        target: props.target,
+        tabindex: props.disabled ? '-1' : data.attrs ? data.attrs.tabindex : null,
+        'aria-disabled': props.disabled ? 'true' : null
+      },
+      props: _objectSpread({}, props, {
+        tag: props.routerTag
+      })
+    }); // If href attribute exists on router-link (even undefined or null) it fails working on SSR
+    // So we explicitly add it here if needed (i.e. if computeHref() is truthy)
+
+    if (href) {
+      componentData.attrs.href = href;
+    } else {
+      // Ensure the prop HREF does not exist for router links
+      delete componentData.props.href;
+    } // We want to overwrite any click handler since our callback
+    // will invoke the user supplied handler if !props.disabled
+
+
+    componentData[eventType] = _objectSpread({}, componentData[eventType] || {}, handlers);
+    return h(tag, componentData, children);
+  }
+});
+
+exports.default = _default;
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.computeHref = exports.computeRel = exports.computeTag = exports.isRouterLink = exports.parseQuery = exports.stringifyQueryObj = void 0;
+
+var _toString = _interopRequireDefault(__webpack_require__(158));
+
+var _inspect = __webpack_require__(43);
+
+var _object = __webpack_require__(47);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ANCHOR_TAG = 'a'; // Precompile RegExp
+
+var commaRE = /%2C/g;
+var encodeReserveRE = /[!'()*]/g; // Method to replace reserved chars
+
+var encodeReserveReplacer = function encodeReserveReplacer(c) {
+  return '%' + c.charCodeAt(0).toString(16);
+}; // Fixed encodeURIComponent which is more conformant to RFC3986:
+// - escapes [!'()*]
+// - preserve commas
+
+
+var encode = function encode(str) {
+  return encodeURIComponent((0, _toString.default)(str)).replace(encodeReserveRE, encodeReserveReplacer).replace(commaRE, ',');
+};
+
+var decode = decodeURIComponent; // Stringifies an object of query parameters
+// See: https://github.com/vuejs/vue-router/blob/dev/src/util/query.js
+
+var stringifyQueryObj = function stringifyQueryObj(obj) {
+  if (!(0, _inspect.isPlainObject)(obj)) {
+    return '';
+  }
+
+  var query = (0, _object.keys)(obj).map(function (key) {
+    var val = obj[key];
+
+    if ((0, _inspect.isUndefined)(val)) {
+      return '';
+    } else if ((0, _inspect.isNull)(val)) {
+      return encode(key);
+    } else if ((0, _inspect.isArray)(val)) {
+      return val.reduce(function (results, val2) {
+        if ((0, _inspect.isNull)(val2)) {
+          results.push(encode(key));
+        } else if (!(0, _inspect.isUndefined)(val2)) {
+          // Faster than string interpolation
+          results.push(encode(key) + '=' + encode(val2));
+        }
+
+        return results;
+      }, []).join('&');
+    } // Faster than string interpolation
+
+
+    return encode(key) + '=' + encode(val);
+  })
+  /* must check for length, as we only want to filter empty strings, not things that look falsey! */
+  .filter(function (x) {
+    return x.length > 0;
+  }).join('&');
+  return query ? "?".concat(query) : '';
+};
+
+exports.stringifyQueryObj = stringifyQueryObj;
+
+var parseQuery = function parseQuery(query) {
+  var parsed = {};
+  query = (0, _toString.default)(query).trim().replace(/^(\?|#|&)/, '');
+
+  if (!query) {
+    return parsed;
+  }
+
+  query.split('&').forEach(function (param) {
+    var parts = param.replace(/\+/g, ' ').split('=');
+    var key = decode(parts.shift());
+    var val = parts.length > 0 ? decode(parts.join('=')) : null;
+
+    if ((0, _inspect.isUndefined)(parsed[key])) {
+      parsed[key] = val;
+    } else if ((0, _inspect.isArray)(parsed[key])) {
+      parsed[key].push(val);
+    } else {
+      parsed[key] = [parsed[key], val];
+    }
+  });
+  return parsed;
+};
+
+exports.parseQuery = parseQuery;
+
+var isRouterLink = function isRouterLink(tag) {
+  return tag !== ANCHOR_TAG;
+};
+
+exports.isRouterLink = isRouterLink;
+
+var computeTag = function computeTag() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      to = _ref.to,
+      disabled = _ref.disabled;
+
+  var thisOrParent = arguments.length > 1 ? arguments[1] : undefined;
+  return thisOrParent.$router && to && !disabled ? thisOrParent.$nuxt ? 'nuxt-link' : 'router-link' : ANCHOR_TAG;
+};
+
+exports.computeTag = computeTag;
+
+var computeRel = function computeRel() {
+  var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      target = _ref2.target,
+      rel = _ref2.rel;
+
+  if (target === '_blank' && (0, _inspect.isNull)(rel)) {
+    return 'noopener';
+  }
+
+  return rel || null;
+};
+
+exports.computeRel = computeRel;
+
+var computeHref = function computeHref() {
+  var _ref3 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      href = _ref3.href,
+      to = _ref3.to;
+
+  var tag = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ANCHOR_TAG;
+  var fallback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '#';
+  var toFallback = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : '/';
+
+  // We've already checked the $router in computeTag(), so isRouterLink() indicates a live router.
+  // When deferring to Vue Router's router-link, don't use the href attribute at all.
+  // We return null, and then remove href from the attributes passed to router-link
+  if (isRouterLink(tag)) {
+    return null;
+  } // Return `href` when explicitly provided
+
+
+  if (href) {
+    return href;
+  } // Reconstruct `href` when `to` used, but no router
+
+
+  if (to) {
+    // Fallback to `to` prop (if `to` is a string)
+    if ((0, _inspect.isString)(to)) {
+      return to || toFallback;
+    } // Fallback to `to.path + to.query + to.hash` prop (if `to` is an object)
+
+
+    if ((0, _inspect.isPlainObject)(to) && (to.path || to.query || to.hash)) {
+      var path = (0, _toString.default)(to.path);
+      var query = stringifyQueryObj(to.query);
+      var hash = (0, _toString.default)(to.hash);
+      hash = !hash || hash.charAt(0) === '#' ? hash : "#".concat(hash);
+      return "".concat(path).concat(query).concat(hash) || toFallback;
+    }
+  } // If nothing is provided return the fallback
+
+
+  return fallback;
+};
+
+exports.computeHref = computeHref;
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _inspect = __webpack_require__(43);
+
+/**
+ * Convert a value to a string that can be rendered.
+ */
+var toString = function toString(val) {
+  var spaces = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2;
+  return (0, _inspect.isUndefined)(val) || (0, _inspect.isNull)(val) ? '' : (0, _inspect.isArray)(val) || (0, _inspect.isPlainObject)(val) && val.toString === Object.prototype.toString ? JSON.stringify(val, null, spaces) : String(val);
+};
+
+var _default = toString;
+exports.default = _default;
+
+/***/ }),
+/* 159 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _vue = _interopRequireDefault(__webpack_require__(44));
+
+var _vueFunctionalDataMerge = __webpack_require__(48);
+
+var _config = __webpack_require__(70);
+
+var _normalizeSlot = __webpack_require__(136);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var NAME = 'BButtonClose';
+var props = {
+  disabled: {
+    type: Boolean,
+    default: false
+  },
+  ariaLabel: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'ariaLabel');
+    }
+  },
+  textVariant: {
+    type: String,
+    default: function _default() {
+      return (0, _config.getComponentConfig)(NAME, 'textVariant');
+    }
+  } // @vue/component
+
+};
+
+var _default2 = _vue.default.extend({
+  name: NAME,
+  functional: true,
+  props: props,
+  render: function render(h, _ref) {
+    var props = _ref.props,
+        data = _ref.data,
+        listeners = _ref.listeners,
+        slots = _ref.slots,
+        scopedSlots = _ref.scopedSlots;
+    var $slots = slots();
+    var $scopedSlots = scopedSlots || {};
+    var componentData = {
+      staticClass: 'close',
+      class: _defineProperty({}, "text-".concat(props.textVariant), props.textVariant),
+      attrs: {
+        type: 'button',
+        disabled: props.disabled,
+        'aria-label': props.ariaLabel ? String(props.ariaLabel) : null
+      },
+      on: {
+        click: function click(e) {
+          // Ensure click on button HTML content is also disabled
+
+          /* istanbul ignore if: bug in JSDOM still emits click on inner element */
+          if (props.disabled && e instanceof Event) {
+            e.stopPropagation();
+            e.preventDefault();
+          }
+        }
+      } // Careful not to override the default slot with innerHTML
+
+    };
+
+    if (!(0, _normalizeSlot.hasNormalizedSlot)('default', $scopedSlots, $slots)) {
+      componentData.domProps = {
+        innerHTML: '&times;'
+      };
+    }
+
+    return h('button', (0, _vueFunctionalDataMerge.mergeData)(data, componentData), (0, _normalizeSlot.normalizeSlot)('default', {}, $scopedSlots, $slots));
+  }
+});
+
+exports.default = _default2;
+
+/***/ }),
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+/**
+ * Issue #569: collapse::toggle::state triggered too many times
+ * @link https://github.com/bootstrap-vue/bootstrap-vue/issues/569
+ */
+// @vue/component
+var _default = {
+  methods: {
+    /**
+     * Safely register event listeners on the root Vue node.
+     * While Vue automatically removes listeners for individual components,
+     * when a component registers a listener on root and is destroyed,
+     * this orphans a callback because the node is gone,
+     * but the root does not clear the callback.
+     *
+     * When registering a $root listener, it also registers a listener on
+     * the component's `beforeDestroy` hook to automatically remove the
+     * event listener from the $root instance.
+     *
+     * @param {string} event
+     * @param {function} callback
+     * @chainable
+     */
+    listenOnRoot: function listenOnRoot(event, callback) {
+      var _this = this;
+
+      this.$root.$on(event, callback);
+      this.$on('hook:beforeDestroy', function () {
+        _this.$root.$off(event, callback);
+      }); // Return this for easy chaining
+
+      return this;
+    },
+
+    /**
+     * Safely register a $once event listener on the root Vue node.
+     * While Vue automatically removes listeners for individual components,
+     * when a component registers a listener on root and is destroyed,
+     * this orphans a callback because the node is gone,
+     * but the root does not clear the callback.
+     *
+     * When registering a $root listener, it also registers a listener on
+     * the component's `beforeDestroy` hook to automatically remove the
+     * event listener from the $root instance.
+     *
+     * @param {string} event
+     * @param {function} callback
+     * @chainable
+     */
+    listenOnRootOnce: function listenOnRootOnce(event, callback) {
+      var _this2 = this;
+
+      this.$root.$once(event, callback);
+      this.$on('hook:beforeDestroy', function () {
+        _this2.$root.$off(event, callback);
+      }); // Return this for easy chaining
+
+      return this;
+    },
+
+    /**
+     * Convenience method for calling vm.$emit on vm.$root.
+     * @param {string} event
+     * @param {*} args
+     * @chainable
+     */
+    emitOnRoot: function emitOnRoot(event) {
+      var _this$$root;
+
+      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        args[_key - 1] = arguments[_key];
+      }
+
+      (_this$$root = this.$root).$emit.apply(_this$$root, [event].concat(args)); // Return this for easy chaining
+
+
+      return this;
+    }
+  }
+};
+exports.default = _default;
+
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _dom = __webpack_require__(84);
+
+var _warn = __webpack_require__(86);
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/**
+ * Observe a DOM element changes, falls back to eventListener mode
+ * @param {Element} el The DOM element to observe
+ * @param {Function} callback callback to be called on change
+ * @param {object} [opts={childList: true, subtree: true}] observe options
+ * @see http://stackoverflow.com/questions/3219758
+ */
+var observeDom = function observeDom(el, callback, opts)
+/* istanbul ignore next: difficult to test in JSDOM */
+{
+  // Handle cases where we might be passed a Vue instance
+  el = el ? el.$el || el : null; // Early exit when we have no element
+
+  /* istanbul ignore next: difficult to test in JSDOM */
+
+  if (!(0, _dom.isElement)(el)) {
+    return null;
+  } // Exit and throw a warning when `MutationObserver` isn't available
+
+
+  if ((0, _warn.warnNoMutationObserverSupport)('observeDom')) {
+    return null;
+  } // Define a new observer
+
+
+  var obs = new _dom.MutationObs(function (mutations) {
+    var changed = false; // A mutation can contain several change records, so we loop
+    // through them to see what has changed
+    // We break out of the loop early if any "significant" change
+    // has been detected
+
+    for (var i = 0; i < mutations.length && !changed; i++) {
+      // The mutation record
+      var mutation = mutations[i]; // Mutation type
+
+      var type = mutation.type; // DOM node (could be any DOM node type - HTMLElement, Text, comment, etc.)
+
+      var target = mutation.target; // Detect whether a change happened based on type and target
+
+      if (type === 'characterData' && target.nodeType === Node.TEXT_NODE) {
+        // We ignore nodes that are not TEXT (i.e. comments, etc)
+        // as they don't change layout
+        changed = true;
+      } else if (type === 'attributes') {
+        changed = true;
+      } else if (type === 'childList' && (mutation.addedNodes.length > 0 || mutation.removedNodes.length > 0)) {
+        // This includes HTMLElement and text nodes being
+        // added/removed/re-arranged
+        changed = true;
+      }
+    } // We only call the callback if a change that could affect
+    // layout/size truely happened
+
+
+    if (changed) {
+      callback();
+    }
+  }); // Have the observer observe foo for changes in children, etc
+
+  obs.observe(el, _objectSpread({
+    childList: true,
+    subtree: true
+  }, opts)); // We return a reference to the observer so that `obs.disconnect()`
+  // can be called if necessary
+  // To reduce overhead when the root element is hidden
+
+  return obs;
+};
+
+var _default = observeDom;
+exports.default = _default;
+
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.default = void 0;
+
+/*
+ * Key Codes (events)
+ */
+var KEY_CODES = {
+  SPACE: 32,
+  ENTER: 13,
+  ESC: 27,
+  LEFT: 37,
+  UP: 38,
+  RIGHT: 39,
+  DOWN: 40,
+  PAGEUP: 33,
+  PAGEDOWN: 34,
+  HOME: 36,
+  END: 35,
+  TAB: 9,
+  SHIFT: 16,
+  CTRL: 17,
+  BACKSPACE: 8,
+  ALT: 18,
+  PAUSE: 19,
+  BREAK: 19,
+  INSERT: 45,
+  INS: 45,
+  DELETE: 46
+};
+var _default = KEY_CODES;
+exports.default = _default;
+
+/***/ }),
+/* 163 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.htmlOrText = exports.stripTags = void 0;
+var stripTagsRegex = /(<([^>]+)>)/gi; // Removes any thing that looks like an HTML tag from the supplied string
+
+var stripTags = function stripTags() {
+  var text = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  return String(text).replace(stripTagsRegex, '');
+}; // Generate a domProps object for either innerHTML, textContent or nothing
+
+
+exports.stripTags = stripTags;
+
+var htmlOrText = function htmlOrText(innerHTML, textContent) {
+  return innerHTML ? {
+    innerHTML: innerHTML
+  } : textContent ? {
+    textContent: textContent
+  } : {};
+};
+
+exports.htmlOrText = htmlOrText;
 
 /***/ })
 /******/ ]);
