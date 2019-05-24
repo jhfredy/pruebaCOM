@@ -1,23 +1,9 @@
-@extends('layouts.app')
+@extends('backend.contenido.principal')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+@php
+    $user = Auth::user();
+@endphp
 
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@section('body')
+  @includeWhen($user, 'backend.cliente.cliente-home')
 @endsection

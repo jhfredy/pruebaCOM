@@ -1,8 +1,9 @@
 @php
 use Illuminate\Support\Facades\Auth;
-    $role='';
+  //valida si la persona inicia sesion captura las variables de sesion
+    $user='';
     if(Auth::check()){
-      $role = Auth::user()->rol;
+      $user = Auth::user();
     }else{
       return redirect('/login');
     }
@@ -101,11 +102,10 @@ use Illuminate\Support\Facades\Auth;
         </form>
         <!-- Navigation -->
         <ul class="navbar-nav">
-          @includeWhen($role == 'Admin', 'backend.admin.admin-navbar')
-          @includeWhen($role == 'Analyst', 'backend.analista.analista-navbar')
-          @includeWhen($role == 'Client', 'backend.cliente.cliente-navbar')
-            {{-- @includeWhen($role == 'cliente', 'claro.operador.operador-dash')
-            @includeWhen($role == 'analista', 'claro.tecnico.tecnico-dash') --}}
+
+          {{--  si existe el usuario me agrega el componente de navbar  --}}
+          @includeWhen($user , 'backend.cliente.cliente-navbar')
+          
         </ul>
         <!-- Divider -->
         <hr class="my-3">
