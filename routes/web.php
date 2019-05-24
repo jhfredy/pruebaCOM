@@ -19,8 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/usuarios','HomeController@usuarios');
-Route::get('/listarMunicipios','UserController@listarMunicipios');
-Route::get('/listarDepartamentos','UserController@listarDepartamentos');
+Route::post('/listarMunicipios','UserController@listarMunicipios');
+Route::post('/listarDepartamentos','UserController@listarDepartamentos');
 Route::get('/listarPaises','UserController@listarPaises');
 
 Route::resource('usuarios_crud', 'UserController',[

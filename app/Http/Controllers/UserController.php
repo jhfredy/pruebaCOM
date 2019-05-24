@@ -8,6 +8,9 @@ use App\Municipio;
 use App\Departamento;
 use App\Pais;
 use App\User;
+use DB;
+//llqmo a la instancia de los validadores
+use  App\Http\Requests\UserStoreRequest;
 class UserController extends Controller
 {
     /**
@@ -59,7 +62,7 @@ class UserController extends Controller
     public function listarMunicipios(Request $request){
         //si envio una peticion por vue en el multiselect me filtra por el departamento que escogi
         if(isset($request->id)){
-            return DB::table('municipios')->where('municipio_id',$request->id)->get();
+            return DB::table('municipios')->where('departamento_id',$request->id)->get();
             //si no me lista todos los departamentos
         }else{
             return DB::table('municipios')->get();

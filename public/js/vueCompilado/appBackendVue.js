@@ -44793,6 +44793,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -44808,6 +44817,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             arrayPaises: [],
             arrayDepartamentos: [],
             arrayMunicipios: [],
+            pais: '',
+            departamento: '',
+            municipio: '',
             titleModal: '',
             email: '',
             name: '',
@@ -44860,6 +44872,41 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     methods: {
+        listaPaises: function listaPaises() {
+            var _this = this;
+
+            axios.get('/listarPaises').then(function (response) {
+                _this.arrayPaises = response.data;
+            });
+        },
+        listaDepartamento: function listaDepartamento() {
+            var _this2 = this;
+
+            this.departamento = '';
+            this.municipio = '';
+            if (this.pais != null) {
+                var id = this.pais.id;
+                axios.post('/listarDepartamentos', {
+                    "id": id
+                }).then(function (response) {
+                    _this2.arrayDepartamentos = response.data;
+                });
+            }
+        },
+        listaMunicipio: function listaMunicipio() {
+            var _this3 = this;
+
+            this.municipio = '';
+            if (this.departamento != null) {
+                var id = this.departamento.id;
+                axios.post('/listarMunicipios', {
+                    "id": id
+                }).then(function (response) {
+                    _this3.arrayMunicipios = response.data;
+                });
+            }
+        },
+
         //funcion para abrir modal de agregar o editar
         abrirModal: function abrirModal(model, action) {
             var data = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
@@ -44893,11 +44940,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
         },
         listarUsuario: function listarUsuario(page, search) {
-            var _this = this;
+            var _this4 = this;
 
             var me = this;
             axios.get('/usuarios_crud?page=' + page + '&search=' + search).then(function (response) {
-                _this.arrayUsuarios = response.data.user.data;
+                _this4.arrayUsuarios = response.data.user.data;
                 me.pagination = response.data.pagination;
             });
         },
@@ -44909,7 +44956,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             me.listarUsuario(page, search);
         },
         addUsuario: function addUsuario() {
-            var _this2 = this;
+            var _this5 = this;
 
             var me = this;
             axios.post('/usuarios_crud/', {
@@ -44919,18 +44966,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'municipio_id': this.municipio.id
 
             }).then(function (response) {
-                _this2.cerrarModal();
+                _this5.cerrarModal();
                 toastr.success("Usuario Agregado Correctamente");
-                _this2.listarUsuario(1, '');
+                _this5.listarUsuario(1, '');
             }).catch(function (error) {
-                _this2.errorUser = error.response.data.errors;
+                _this5.errorUser = error.response.data.errors;
                 $.each(error.response.data.errors, function (key, value) {
                     toastr.error(value);
                 });
             });
         },
         editUsuario: function editUsuario() {
-            var _this3 = this;
+            var _this6 = this;
 
             var me = this;
             axios.put('/usuarios_crud/' + this.id_usuario, {
@@ -44940,18 +44987,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'municipio_id': this.municipio.id,
                 'id': this.id_usuario
             }).then(function (response) {
-                _this3.cerrarModal();
+                _this6.cerrarModal();
                 toastr.info("Usuario Editado Correctamente");
-                _this3.listarUsuario(1, '');
+                _this6.listarUsuario(1, '');
             }).catch(function (error) {
-                _this3.errorUser = error.response.data.errors;
+                _this6.errorUser = error.response.data.errors;
                 $.each(error.response.data.errors, function (key, value) {
                     toastr.error(value);
                 });
             });
         },
         deleteUsuario: function deleteUsuario(id) {
-            var _this4 = this;
+            var _this7 = this;
 
             console.log(id);
             swal.fire({
@@ -44968,7 +45015,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 reverseButtons: true
             }).then(function (result) {
                 if (result.value) {
-                    var me = _this4;
+                    var me = _this7;
                     axios.post('/usuarios_crud/delete', { 'id': id }).then(function (response) {
                         me.listarUsuario(1, '');
                         swal.fire('Eliminado!', 'El usuario Ha Sido Eliminado', 'success');
@@ -44987,6 +45034,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     mounted: function mounted() {
         this.listarUsuario(1, '');
+        this.listaPaises();
     }
 });
 
@@ -45227,7 +45275,7 @@ var render = function() {
                         {
                           attrs: {
                             id: "IGname",
-                            label: "Name:",
+                            label: "Nombre:",
                             "label-for": "nombre"
                           }
                         },
@@ -45316,7 +45364,96 @@ var render = function() {
                           ],
                           1
                         )
-                      ])
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "b-form-group",
+                        {
+                          attrs: {
+                            id: "IGrol",
+                            label: "Paises:",
+                            "label-for": "pais"
+                          }
+                        },
+                        [
+                          _c("multiselect", {
+                            attrs: {
+                              options: _vm.arrayPaises,
+                              id: "pais",
+                              openDirection: "bottom",
+                              label: "pais"
+                            },
+                            on: { input: _vm.listaDepartamento },
+                            model: {
+                              value: _vm.pais,
+                              callback: function($$v) {
+                                _vm.pais = $$v
+                              },
+                              expression: "pais"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-form-group",
+                        {
+                          attrs: {
+                            id: "IGrol",
+                            label: "Departamento:",
+                            "label-for": "departamento"
+                          }
+                        },
+                        [
+                          _c("multiselect", {
+                            attrs: {
+                              options: _vm.arrayDepartamentos,
+                              id: "departamento",
+                              openDirection: "bottom",
+                              label: "departamento"
+                            },
+                            on: { input: _vm.listaMunicipio },
+                            model: {
+                              value: _vm.departamento,
+                              callback: function($$v) {
+                                _vm.departamento = $$v
+                              },
+                              expression: "departamento"
+                            }
+                          })
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "b-form-group",
+                        {
+                          attrs: {
+                            id: "IGrol",
+                            label: "Municipio:",
+                            "label-for": "municipio"
+                          }
+                        },
+                        [
+                          _c("multiselect", {
+                            attrs: {
+                              options: _vm.arrayMunicipios,
+                              id: "municipio",
+                              openDirection: "bottom",
+                              label: "municipio"
+                            },
+                            model: {
+                              value: _vm.municipio,
+                              callback: function($$v) {
+                                _vm.municipio = $$v
+                              },
+                              expression: "municipio"
+                            }
+                          })
+                        ],
+                        1
+                      )
                     ],
                     1
                   )
@@ -45337,7 +45474,7 @@ var render = function() {
                           }
                         }
                       },
-                      [_vm._v("Add User")]
+                      [_vm._v("Agregar Usuario")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -45353,7 +45490,7 @@ var render = function() {
                           }
                         }
                       },
-                      [_vm._v("Edit User")]
+                      [_vm._v("Editar Usuario")]
                     )
                   : _vm._e(),
                 _vm._v(" "),

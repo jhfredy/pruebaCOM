@@ -86,7 +86,7 @@
                     
                     <div class="modal-body">
                          <b-form>
-                             <b-form-group id="IGname" label="Name:" label-for="nombre">
+                             <b-form-group id="IGname" label="Nombre:" label-for="nombre">
                                 <b-form-input id="nombre" type="text" v-model="name" required placeholder="Ingresa el nombre"></b-form-input>
                              </b-form-group> 
                              <b-form-group id="IGemail" label="Email:" label-for="email">
@@ -99,13 +99,22 @@
                                         </b-form-group>
                                     </div>
                             </div>
+                              <b-form-group id="IGrol" label="Paises:" label-for="pais">
+                                    <multiselect v-model="pais" :options="arrayPaises" id="pais" openDirection="bottom" label="pais" @input="listaDepartamento"></multiselect>
+                            </b-form-group>
+                            <b-form-group id="IGrol" label="Departamento:" label-for="departamento">
+                                    <multiselect v-model="departamento" :options="arrayDepartamentos" id="departamento" openDirection="bottom" label="departamento" @input="listaMunicipio"></multiselect>
+                            </b-form-group>
+                            <b-form-group id="IGrol" label="Municipio:" label-for="municipio">
+                                    <multiselect v-model="municipio" :options="arrayMunicipios" id="municipio" openDirection="bottom" label="municipio"></multiselect>
+                            </b-form-group>
                                  
                          </b-form>
                     </div>
                     
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" v-if="typeAction==1" @click="addUsuario()">Add User</button>
-                        <button type="button" class="btn btn-primary" v-if="typeAction==2" @click="editUsuario()">Edit User</button>
+                        <button type="button" class="btn btn-primary" v-if="typeAction==1" @click="addUsuario()">Agregar Usuario</button>
+                        <button type="button" class="btn btn-primary" v-if="typeAction==2" @click="editUsuario()">Editar Usuario</button>
                         <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal">Close</button> 
                     </div>
                     
@@ -133,6 +142,9 @@ export default {
             arrayPaises:[],
             arrayDepartamentos:[],
             arrayMunicipios:[],
+            pais:'',
+            departamento:'',
+            municipio:'',
             titleModal:'',
             email:'',
             name:'',
@@ -184,6 +196,35 @@ export default {
         },
     
     methods:{
+        listaPaises(){
+            
+            axios.get('/listarPaises').then(response=>{
+                this.arrayPaises=response.data;
+            });
+        },
+        listaDepartamento(){
+            this.departamento='';
+            this.municipio='';
+            if(this.pais!=null){
+                    let id=this.pais.id;
+                axios.post('/listarDepartamentos',{
+                    "id":id,
+                }).then(response=>{
+                    this.arrayDepartamentos=response.data;
+                });
+            }
+        },
+        listaMunicipio(){
+            this.municipio='';
+            if(this.departamento!=null){
+                    let id=this.departamento.id;
+                axios.post('/listarMunicipios',{
+                    "id":id,
+                }).then(response=>{
+                    this.arrayMunicipios=response.data;
+                });
+            }
+        },
         //funcion para abrir modal de agregar o editar
         abrirModal(model,action,data=[]){
             switch(model){
@@ -211,13 +252,12 @@ export default {
                 }
             }
         },
-            listarUsuario(page,search){
-                let me=this;
-                axios.get('/usuarios_crud?page='+page+'&search='+search).then(response => {
-                this.arrayUsuarios=response.data.user.data;
-                me.pagination=response.data.pagination;
-            });
-            
+        listarUsuario(page,search){
+            let me=this;
+            axios.get('/usuarios_crud?page='+page+'&search='+search).then(response => {
+            this.arrayUsuarios=response.data.user.data;
+            me.pagination=response.data.pagination;
+            });   
         },
         changePage(page,search){
                 let me=this;
@@ -309,6 +349,7 @@ export default {
     },
     mounted(){
         this.listarUsuario(1,'');
+        this.listaPaises();
     }
 }
 </script>

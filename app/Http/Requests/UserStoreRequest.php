@@ -21,6 +21,8 @@ class UserStoreRequest extends FormRequest
      *
      * @return array
      */
+
+     //funcion para dar reglas al almacenar un usuario
     public function rules()
     {
         return [
@@ -28,6 +30,21 @@ class UserStoreRequest extends FormRequest
             'email'=>'required|email|unique:users,email',
             'password'=>'required|min:6|max:12',
             'municipio_id'=>'required|integer',
+        ];
+    }
+    //funcion para editar los mensajes de alerta
+    public function messages()
+    {
+        return [
+            
+            'name.required' =>'El campo de nombre es requerido',
+            'email.required' => 'El campo de Email es requerido',
+            'password.min' => 'El campo de contraseña debe tener mas de :min caracteres',
+            'password.max' => 'El campo de contraseña debe tener mas de :max caracteres',
+            'password.required' => 'El campo de contraseña es obligatorio',
+            'email.unique' => 'Este registro ya existe',
+            'municipio_id.required'=>'el campo de municipio es obligatorio',
+            'email.email' => 'El campo de Email debe ser tipo Email',
         ];
     }
 }
