@@ -14,8 +14,9 @@ class User extends Authenticatable
      *
      * @var array
      */
+    //datos que van a ser llenados por el cliente
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','municipio_id'
     ];
 
     /**
@@ -26,4 +27,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    //funcion de eloquent para llamar la tabla de municipios
+    public function municipios(){
+        return $this->belongsTo('App\Municipio','municipio_id','id');
+    }
 }
